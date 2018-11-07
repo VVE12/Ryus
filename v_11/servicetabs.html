@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>СК РЮС Краснодар | Техническое обслуживание, ремонт зданий, сооружение.</title>
+<link rel="shortcut icon"href="img/icons/favicon.ico">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"type="text/javascript"></script>
+<style>
+    
+* {
+    box-sizing: border-box;
+}
+    
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #ededed;
+}
+    
+#header-top {
+    background: #ededed;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.wrapper-header-top {
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+    
+.header-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+    
+.header-block-logo {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+}
+    
+.header-block img {
+    vertical-align: middle;
+    border-style: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+}
+    
+.header-block-text {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+}
+    
+.header-block-contacts {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+}
+    
+.header-block-contacts-inner-form {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    text-transform: none;
+    width: 100%;
+    max-width: 330px;
+    height: 100%;
+    float: right;
+    color: #181818;
+    line-height: 25px;
+}
+    
+.header-block-contacts-inner-form .tel a {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    display: block;
+    margin: 8px 0;
+    color: #181818;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    cursor: unset;
+}
+    
+.header-block-contacts-inner-form h3 {
+    font-size: 14px;
+    margin: 0px 0;
+}
+    
+.email-top {
+    font-size: 20px;
+    text-transform: none;
+}
+    
+.callback {
+    display: block;
+    font-size: 17px;
+    margin: 0px auto 0 auto;
+    width: 100%;
+    max-width: 280px;
+    height: 40px;
+    background: #ffe200;
+    border-radius: 20px;
+    padding: 9px 0 0;
+    text-align: center;
+    color: #000000!important;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: none;
+    text-decoration: none!important;
+    text-shadow: none;
+    transition: all 0.3s;
+    margin-top: 0px;
+    animation: color 1s infinite;
+}
+    
+.popup {
+    background: rgba(100, 100, 100, 0.6);
+    position: fixed;
+    display: none;
+    z-index: 5000;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+    
+.popup > div {
+    position: fixed;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+    padding: 30px 15px;
+    width: auto;
+    max-width: 400px;
+    z-index: 5001;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    border-radius: 0%;
+    overflow-x: hidden;
+    height: auto;
+    padding: 5px;
+    border-radius: 20px;
+}
+    
+.popup .formtitleone {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: none;
+    color: #33363b;
+    margin-bottom: 0px;
+}
+    
+.form-header-top {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+    
+input {
+    outline: none;
+    border: 2px solid #9a9a9a;
+    border-radius: 10px!important;
+}
+    
+input[type="text"].input-name-header-top {
+    background: url(./img/icons/user.png) 12px 16px no-repeat #fff;
+}
+    
+input[type="text"].input-form-header-top {
+    width: 280px;
+    margin: 5px 8px;
+}
+    
+input[type="text"].input-header-top {
+    width: 280px;
+    height: 50px;
+    margin: 20px 0 0;
+    padding: 0 0 0 40px;
+    color: #030303;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    text-transform: none;
+    border-radius: 5px;
+    border: 1px solid #99a3b4;
+    box-shadow: none;
+}
+    
+input[type="text"].input-phone-header-top {
+    background: url(./img/icons/smartphone.png) 12px 16px no-repeat #fff;
+}
+    
+input[type="text"].input-form-header-top {
+    width: 280px;
+    margin: 5px 8px;
+}
+    
+input[type="submit"].btn {
+    background: #ffe200;
+    box-shadow: none;
+    border-radius: 3px;
+    width: 280px;
+    height: 48px;
+    margin: 10px auto;
+    cursor: pointer;
+    border: 0;
+    color: #030303;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    text-transform: none;
+    transition: all 0.3s;
+    width: 100%;
+    max-width: 280px;
+}
+    
+input {
+    outline: none;
+    border: 2px solid #9a9a9a;
+    border-radius: 10px!important;
+}
+    
+.checkbox-form-header-top a {
+    color: #171717;
+    text-decoration: none;
+    text-transform: none;
+}
+    
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+    
+.checkbox-form-header-top {
+    display: flex;
+    flex-direction: row;
+    color: #171717;
+    text-decoration: none;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    width: 280px;
+    line-height: 12px;
+    font-size: 12px;
+}
+    
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+    width: 47px;
+    height: 15px;
+    margin: 5px;
+    padding: 0 0 0px 22px;
+}
+    
+.header-block-text {
+    background: url(./img/bg/text-brackets.png) no-repeat;
+    width: 519px;
+    display: none;
+}
+    
+.header-block-text a {
+    float: left;
+    padding: 16px 1px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 25px;
+    text-transform: none;
+    color: #181818!important;
+}
+    
+.header-block-links {
+    display: flex;
+    font-size: 25px;
+    color: #181818!important; 
+}
+    
+.tomain a {
+    font-size: 25px;
+    color: #181818!important;    
+}
+    
+@media (min-width: 790px) {
+.header-block-text a {
+    background: url(./img/bg/text-brackets.png) no-repeat;
+    width: 519px;
+}
+}
+    
+@media (max-width: 790px) and (min-width: 320px) {
+#header-top {
+    padding-top: 50px;
+}
+}
+    
+@media (max-width: 1220px) and (min-width: 320px) {
+.header-block {
+    flex-direction: column;
+}
+}
+    
+@media (max-width: 790px) and (min-width: 320px) {
+.header-block {
+    flex-direction: column;
+}
+}
+    
+@media (max-width: 700px) and (min-width: 320px) {
+a[href^="tel:"] {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: unset;
+}
+}
+    
+@media (max-width: 790px) and (min-width: 320px) {
+.header-block-contacts h3 {
+    display: none;
+}
+}
+    
+@media (max-width: 790px) and (min-width: 320px) {
+.tim {
+    display: none;
+}
+}
+    
+@media (max-width: 790px) and (min-width: 320px) {
+.email-top {
+    display: none;
+}
+}
+    
+@media (max-width: 790px) and (min-width: 320px) {
+.header-block-text a {
+    display: none;
+}
+}
+    
+@media (max-width: 790px) and (min-width: 320px) {
+.header-block-text a {
+    width: auto;
+}
+}
+    
+@media (max-width: 600px) and (min-width: 320px) {
+.tab button {
+font-size: 10px!important;        
+}
+}    
+    
+@-webkit-keyframes color{from{background:#ffe200;}
+to{background:#93872bb3;}
+}
+@keyframes color{from{background:#ffe200;}
+to{background:#93872bb3;}
+}
+    
+.tabcontents {
+    background: #ededed;
+}
+    
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 841px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: #081272;
+    color: #ffffff;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #4c59c0;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #303da1;
+    border-right: 20px;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    margin: 0 auto;
+    max-width: 841px;
+    width: 100%;
+    background: #ededed;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.bottom-button {
+    width: 100%;
+    max-width: 285px;
+    margin-top: 20px;
+    animation: unset!important;
+    margin: 20px auto;
+    padding-bottom: 10px;
+}
+
+.bottom-button a {
+    animation: unset!important;    
+}
+.bottom-button a:hover {
+    background: #b8ac4e;
+}
+    
+.callbackbottom{display:block;font-size:17px;margin:0px auto 0 auto;width:100%;max-width:280px;height:40px;background:#ffe200;border-radius:20px;padding:9px 0 0;text-align:center;color:#000000!important;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;text-transform:none;text-decoration:none!important;text-shadow:none;transition:all 0.3s;margin-top:0px;animation:unset;box-shadow: 1px 2px 3px 3px rgb(8, 18, 114);}
+
+</style>
+</head>
+<body>
+
+<section id="header-top">
+    <div class="wrapper-header-top">
+        <div class="header-block">
+            <div class="header-block-logo">
+                <a href="http://skryus.ru"><img src="img/icons/logo.png" alt="Рюс логотип"></a>
+            </div>
+            <div class="header-block-text">
+                <a>Полный спектр строительных услуг для юридических и физических лиц</a>
+            </div>
+            <div class="header-block-links">
+                <div class="tomain"><a href="http://skryus.ru">[ Возврат на главную ]</a></div>
+            </div>
+            <div class="header-block-contacts">
+                <div class="header-block-contacts-inner-form">
+                    <div class="adr">г. Краснодар, ул. Садовая, 112</div>
+                        <div class="tel">
+                            <a href="tel:8(800)550-66-31">8(800)550-66-31</a>
+                        </div>
+                        <h3>Звонок по России Бесплатный</h3>
+                        <div class="tim">пн-вс: 08:00 - 18:00</div>
+                        <div class="email-top">e-mail: sk@ryus.ooo</div>
+                        <a href="#call" data-js="open" class="callback fancybox" data-target="backCall">Заказать обратный звонок</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="popup" style="display:none;"><div class="wrapper"><div class="formtitleone">Обратный звонок</div><form action="submit_header_top.php" method="post" class="form-header-top" name="form-header-top-app" id="form-header-bottom-app"><input type="hidden" name="info" value="Оставьте заявку на расчет стоимости работ"><input type="text" name="name" class="input-header-top input-form-header-top input-name-header-top" placeholder="Ваше имя..." required=""><input type="text" name="phone" class="input-header-top input-form-header-top input-phone-header-top text-input text-input-phone" placeholder="Ваш телефон..." required=""><input type="submit" name="submit-form-header-top" class="btn" disabled="" value="Отправить" data-target=""><div class="checkbox-form-header-top"><input type="checkbox" id="checkbox-form-id-header-top" class="access_header_top" value="ЗАЯВКА ОТ КЛИЕНТА!" name="access_header_top[]" onclick="check_header_top();"><a href="politicaconfidencialnosti.html">Я ознакомлен и согласен с <span>Политикой в отношении обработки персональных данных.</span></a></div></form><script>function check_header_top() {var submit=document.getElementsByName('submit-form-header-top')[0];if (document.getElementById('checkbox-form-id-header-top').checked)submit.disabled = '';else submit.disabled = 'disabled';}</script></div></div>
+
+<div class="tabcontents">
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Tabone')">Проектирование</button>
+  <button class="tablinks" onclick="openCity(event, 'Tabtwo')">Ремонтные работы</button>
+  <button class="tablinks" onclick="openCity(event, 'Tabthree')">Строительные услуги</button>
+  <button class="tablinks" onclick="openCity(event, 'Tabfour')">Эксплутационное обслуживание</button>
+</div>
+
+<div id="Tabone" class="tabcontent">
+  <h3>Проектирование (все стадии и все разделы)</h3>
+  <p>Проектирование объекта строительства подразумевает создание полного комплекса документации проекта, который состоит примерно из 30—150 альбомных листов с чертежами, проектами здания в разных ракурсах и разрезах, проектами инженерных сооружений. В эту документацию входят также бумаги, на которых отображается проектирование фасадов, проектирование фундамента, поэтажных перекрытий, кровли и других элементов конструкции. Стадии проектирования:</p>
+  <p>- Предпроектная подготовка;</p>
+  <p>- Проект;</p>
+  <p>- Рабочий проект (включающий перечень документов);</p>
+  <p>- Согласование проекта.</p>
+</div>
+
+<div id="Tabtwo" class="tabcontent">
+  <h3>Ремонтные работы</h3>
+  <p>Работы, включающие в себя проведение всех видов ремонтов технологического оборудования (капитальные, средние, текущие), а также выполнение окраски технологического оборудования, наложение теплоизоляции и защитного покрытия на поверхность технологического оборудования, проведение дезактивации или отмывки от пыли и загрязнений поверхности технологического оборудования. Основные виды ремонтных работ:</p>
+  <p>- Отделочные работы помещений;
+  <p>- Шпаклевка стен и потолков;</p>
+  <p>- Штукатурка;</p>
+  <p>- Клейка обоев;</p>
+  <p>- Настил ламината, паркетной доски;</p>
+  <p>- Кафель;</p>
+  <p>- Гипсокартон;</p>
+  <p>- Пластик;</p>
+  <p>- Сантехника;</p>
+  <p>- Электрика и многое другое;</p>
+  <p>- Ремонт под ключ;</p>
+  <p>- Чистота и окуратность в работе.</p>
+</div>
+
+<div id="Tabthree" class="tabcontent">
+  <h3>Строительные услуги</h3>
+  <p>Все виды работ (услуг), выполняемые на строительной площадке (объекте) при возведении, реконструкции или капитальном ремонте зданий и сооружений, включенные в перечень видов работ по строительству реконструкции и капитальному ремонту, утвержденному уполномоченным государственным органом, а также отделочные работы и работы по благоустройству территории. В зависимости от последовательности выполнения их объединяют в 2 группы:</p>
+  <p>- Подготовительные работы;</p>
+  <p>- Основные или общестроительной работы;</p>
+  <p>К отдельной группе можно отнести вспомогательные работы:</p>
+  <p>- Крепление стенок котлованов;</p>
+  <p>- Устройство подмостей;</p>
+  <p>- Понижение уровня грунтовых вод;</p>
+  <p>- Уплотнение грунтов;</p>
+  <p>- Скрытые работы.</p>
+</div>
+
+<div id="Tabfour" class="tabcontent">
+  <h3>Эксплутационное обслуживание</h3>
+  <p>Эксплуатационное обслуживание представляет собой комплекс мероприятий, направленных на обеспечение безотказной работы элементов здания или сооружения на протяжении срока службы, регламентированного установленными нормативами. Весь комплекс услуг по эксплуатации включает:</p>
+  <p>- Техническое обслуживание инженерных сетей (контроль состояния, регулировка, отладка);</p>
+  <p>- Текущий либо плановый ремонт инженерных сетей;</p>
+  <p>- Мелкий ремонт архитектурных элементов здания;</p>
+  <p>- Капитальный ремонт зданий;</p>
+  <p>- Организация мероприятий по очистке, благоустройству, уборке прилегающих территорий;</p>
+  <p>- Модернизация существующих коммуникаций, получение разрешений и согласований;</p>
+  <p>- Экстренное реагирование в случае возникновения чрезвычайных и аварийных ситуаций;</p>
+  <p>- Ведение эксплуатационного паспорта зданий.</p>
+</div>
+
+<div class="bottom-button"><a href="#call" data-js="open" class="callbackbottom fancybox" data-target="backCall">Рассчитать стоимость?</a></div>
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+<script src="js/popup.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+     
+</body>
+</html>

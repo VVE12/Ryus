@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="СК РЮС, строительная компания, эксплутация, ремонт.">
+    <meta name="keywords" content="СК РЮС, строительные услуги, эксплуатация.">
+    <meta name="yandex-verification" content="2a5f787680d73964"/>
+    <meta name="yandex-verification" content="21ec295523abaf6b" />
+    <meta name="google-site-verification" content="UvP_tTd1zmkZcqxmaRDeqB-1J-KXiYILhrnNXyyQ0SI"/>
+
+        <title>СК РЮС Краснодар | Техническое обслуживание, ремонт зданий, сооружение.</title>
+
+    <!--основные стили-->
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!--слайдер на 9-ой секции-->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.default.min.css">
+
+    <!--адаптивное меню-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script>$(document).ready(function(){var touch = $('#touch-menu'); var menu = $('.menu'); $(touch).on('click', function(e){e.preventDefault(); menu.slideToggle();}); $(window).resize(function(){var w = $(window).width(); if(w > 767 && menu.is(':hidden')){menu.removeAttr('style'); }}); });</script>
+
+    <!--яндекс апи-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script>ymaps.ready(function(){var myMap=new ymaps.Map('map',{center:[45.04047084,38.99511866],zoom:18},{searchControlProvider:'yandex#search'}),MyIconContentLayout=ymaps.templateLayoutFactory.createClass('<div style="color:#FFFFFF;font-weight:bold;">$[properties.iconContent]</div>'),myPlacemark=new ymaps.Placemark(myMap.getCenter(),{hintContent:'СК РЮС',balloonContent:'Техническое обслуживание, ремонт зданий и сооружений. Строительство малоэтажных и многоэтажных домов. Полный спектр услуг для юридических и физических лиц.'},{iconLayout:'default#image',iconImageHref:'markerimg.png',iconImageSize:[86,67],iconImageOffset:[-5,-38]}),myPlacemarkWithContent=new ymaps.Placemark([45.04047084,38.99511866],{hintContent:'СК РЮС',balloonContent:'Техническое обслуживание, ремонт зданий и сооружений. Строительство малоэтажных и многоэтажных домов. Полный спектр услуг для юридических и физических лиц.'},{iconLayout:'default#imageWithContent',iconImageHref:'',iconImageSize:[86,67],iconImageOffset:[-24,-24],iconContentOffset:[15,15],iconContentLayout:MyIconContentLayout}); myMap.geoObjects.add(myPlacemark).add(myPlacemarkWithContent); });</script>
+    <!--гугл апи-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118277687-1"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments); }gtag('js', new Date()); gtag('config', 'UA-118277687-1');</script>
+
+</head>
+<body>
+
+<!--шапка заголовка-->
+<section id="header-top">
+     <div class="wrapper-header-top">
+          <div class="header-block">
+               <div class="header-block-logo"><img src="img/icons/logo.png" alt="Рюс логотип"></div>
+               <div class="header-block-text"><a>Полный спектр строительных услуг для юридических и физических лиц</a></div>
+               <div class="header-block-contacts">
+                    <div class="header-block-contacts-inner-form">
+                        <div class="adr">г. Краснодар, ул. Садовая, 112</div>
+                        <div class="tel"><a href="tel:8(800)550-66-31">8(800)550-66-31</a></div>
+                        <h3>Звонок по России Бесплатный</h3>
+                        <div class="tim">пн-вс: 08:00 - 17:00</div>
+                        <div class="email-top">e-mail: sk@ryus.ooo</div>
+                        <a href="#call" data-js="open" class="callback fancybox" data-target="backCall">Заказать обратный звонок</a>
+                    </div>
+               </div>
+          </div>
+     </div>
+</section>
+
+<!--форма обратного звонка-->
+<div class="popup" style="display:none;">
+    <div class="wrapper">
+        <div class="formtitleone">Обратный звонок</div>
+            <form action="submit_header_top.php" method="post" class="form-header-top" name="form-header-top-app" id="form-header-bottom-app">
+                <input type="hidden" name="info" value="Оставьте заявку на расчет стоимости работ">
+                <input type="text" name="name" class="input-header-top input-form-header-top input-name-header-top" placeholder="Ваше имя..." required>
+                <input type="text" name="phone" class="input-header-top input-form-header-top input-phone-header-top text-input text-input-phone" placeholder="Ваш телефон..." required>
+                <input type="submit" name="submit-form-header-top" class="btn" disabled="" value="Отправить" data-target="" class="form-header-top-app">
+                <div class="checkbox-form-header-top">
+                    <input type="checkbox" id="checkbox-form-id-header-top" class="access_header_top" value="ЗАЯВКА ОТ КЛИЕНТА!" name="access_header_top[]" onclick="check_header_top();">
+                    <a href="politicaconfidencialnosti.html">Я ознакомлен и согласен с <span>Политикой в отношении обработки персональных данных.</span></a>
+                </div>
+            </form>
+            <script>function check_header_top() {var submit = document.getElementsByName('submit-form-header-top')[0]; if (document.getElementById('checkbox-form-id-header-top').checked)submit.disabled = ''; else submit.disabled = 'disabled';}
+            </script>
+    </div>
+</div>
+
+<!--меню-->
+<section id="top-menu">
+    <div class="wrapper-menu">
+        <a id="touch-menu"class="mobile-menu"href="#"><i class="icon-reorder"><img src="img/icons/down-arrow.png"alt="Стрелка вниз"></i>Меню</a>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#first-section">О компании</a></li>
+                <li><a href="#second-section">Услуги</a></li>
+                <li><a href="#third-section">Преимущества</a></li>
+                <li><a href="#fourth-section">Этапы работ</a></li>
+                <li><a href="#sixth-section">Способы оплаты</a></li>
+                <li><a href="#tenth-section">Отзывы</a></li>
+                <li><a href="#map">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<!--главная форма под меню-->
+<header>
+<section id="header-bottom">
+    <div class="header-bottom-bg">
+        <div class="wrapper-header-bottom">
+            <div class="header-bottom-content">
+            <div class="header-bottom-block"><div class="firstsectiontitleone">Техническое обслуживание, ремонт зданий и сооружений</div><h2>Полный спектр услуг для юридических и физических лиц</h2><div class="header-bottom-addition-block"><span>Без предоплаты </span>с гарантией соблюдения сроков и отсутствием внеплановых расходов</div>
+            </div>
+            <div class="header-bottom-form revealator-slideup revealator-delay3 revealator-once revealator-within">
+                <div class="formtitletwo">Закажите расчёт стоимости и смету БЕСПЛАТНО!</div>
+                    <form action="submit_header_bottom.php" method="post" class="form-header-bottom" name="form-header-bottom-app" id="form-header-bottom-app">
+                        <input type="hidden" name="info" value="Оставьте заявку на расчет стоимости работ">
+                        <input type="text" name="name" class="input-header-bottom input-form-header-bottom input-name-header-bottom" placeholder="Ваше имя..." required>
+                        <input type="text" name="phone" class="input-header-bottom input-form-header-bottom input-phone-header-bottom text-input text-input-phone" placeholder="Ваш телефон..." required>
+                        <input type="submit" name="submit-form-header-bottom" class="btn" disabled="" value="Заказать расчёт" data-target="" class="form-header-bottom-app">
+                        <div class="checkbox-form-header-bottom">
+                            <input type="checkbox" id="checkbox-form-id-header-bottom" class="access_header_bottom" value="ЗАЯВКА ОТ КЛИЕНТА!" name="access_header_bottom[]" onclick="check_header_bottom();">
+                            <a href="politicaconfidencialnosti.html">Я ознакомлен и согласен с <span>Политикой в отношении обработки персональных данных.</span></a>
+                        </div>
+                    </form>
+                <script>function check_header_bottom(){var submit=document.getElementsByName('submit-form-header-bottom')[0]; if(document.getElementById('checkbox-form-id-header-bottom').checked)submit.disabled=''; else submit.disabled='disabled';}
+                </script>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+</header>
+
+<!--1-я секция-->
+<section id="first-section">
+    <div class="wrapper-first">
+        <div class="first-section-title"><div class="firstsectiontitle">О компании</div></div>
+        <div class="first-section-block-one">
+            <div class="first-section-block-one-item-one">
+                <div class="first-section-block-one-text-one"><div class="firstsectionone">Работаем ПРОЗРАЧНО, НИКАКИХ ПЕРЕПЛАТ!</div><p>Компания не использует программы кредитования, а потому может позволить себе максимально комфортный для клиента принцип ценообразования.</p>
+                </div>
+                <div class="first-section-block-one-text-two"><p>Наши производственные мощности находятся в нашей же собственности. Мы не платим аренду, а потому у нас дешевле.</p></div>
+            </div>
+            <div class="first-section-block-one-item-two"><div class="first-section-block-one-img"><img src="img/bg/first-img-on.jpg" alt="Работник"></div></div>
+        </div>
+        <div class="first-section-block-two">
+            <div class="first-section-block-two-item-one"><div class="first-section-block-two-img"><img src="img/bg/first-img-tw.jpg" alt="Рабочий коллектив"></div></div>
+            <div class="first-section-block-two-item-two">
+                <div class="first-section-block-two-text-one"><p>Наше конкурентное преимущество в том, что мы в <span>97%</span> случаев выполняем работу раньше назначенного нами же срока</p></div>
+                <div class="first-section-block-two-text-two"><p>По статистике более <span>75%</span> клиентов <b>возвращаются к нам снова</b></p></div>
+                <div class="first-section-block-two-text-three"><p>Около <span>80%</span> наших сотрудников являются специалистами с опытом работы более 15 лет, каждый из которых ежегодно повышает свою квалификацию</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--2-я секция-->
+<section id="second-section">
+    <div class="second-section-bg-one">
+        <div class="second-section-bg-two">
+            <div class="wrapper-second">
+                <div class="second-section-title"><div class="secondsectiontitle">Наши услуги</div></div>
+                <div class="second-section-block"><div class="second-section-item">Проектирование<img src="img/icons/proektirovanieistroitelstvo.jpg" alt="Проектирование"></div>
+                    <div class="second-section-item"><a>Ремонтные <br>работы</a><img src="img/icons/remont.jpg" alt="Ремонтные работы"></div>
+                    <div class="second-section-item">Строительные <br>услуги<img src="img/icons/stroitelnieuslugi.jpg" alt="Строительные услуги"></div>
+                    <div class="second-section-item">Эксплуатационное <br>обслуживание<img src="img/icons/eksplutacionnoeobsluzhivanie.jpg" alt="Эксплуатационное обслуживание"></div>
+                </div>
+                <div class="second-section-bottom"><div class="second-section-button"><a href="price.html">Подробнее о стоимости</a></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--3-я секция-->
+<section id="third-section">
+    <div class="wrapper-third">
+        <div class="third-section-title">
+            <div class="thirdsectiontitle">6 важных причин, чтобы выбрать нас</div>
+        </div>
+        <div class="third-section-list-row-one">
+            <div class="third-section-list-row-item-one">
+                <div class="third-section-list-row-img-one"><a></a></div>
+                <div class="thirdsectiontitleone">Выгодные цены</div>
+                <h2>Гибкая система расчета стоимости, в зависимости от возможности клиента</h2>
+            </div>
+            <div class="third-section-list-row-item-two">
+                <div class="third-section-list-row-img-two"><a></a></div>
+                <div class="thirdsectiontitletwo">Строго соблюдаем сроки</div>
+                <h2>Точное соблюдение графика план производства работ (ППР)</h2>
+            </div>
+            <div class="third-section-list-row-item-three">
+                <div class="third-section-list-row-img-three"><a></a></div>
+                <div class="thirdsectiontitlethree">Высокая квалификация</div>
+                <h2>Работаем только в соответствии с требованиями СНИП и ГОСТ</h2>
+            </div>
+        </div>
+        <div class="hr"></div>
+        <div class="third-section-list-row-two">
+            <div class="third-section-list-row-item-four">
+                <div class="third-section-list-row-img-four"><a></a></div>
+                <div class="thirdsectiontitlefour">Всесезонность</div>
+                <h2>Строительные работы 24 часа 7 дней в неделю* <br><i>*в зависимости от вида работ</i></h2>
+            </div>
+            <div class="third-section-list-row-item-five">
+                <div class="third-section-list-row-img-five"><a></a></div>
+                <div class="thirdsectiontitlefive">Отсрочка платежа</div>
+                <h2>Возможность оплатить работы после их выполнения</h2>
+            </div>
+            <div class="third-section-list-row-item-six">
+                <div class="third-section-list-row-img-six"><a></a></div>
+                <div class="thirdsectiontitlesix">Контроль качества</div>
+                <h2>Проводим проверку соблюдения технологии скрытых работ</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--4-я секция-->
+<section id="fourth-section">
+    <div class="fourth-section-bg">
+        <div class="wrapper-fourth">
+            <div class="fourth-section-title">
+                <div class="fourthsectiontitle">Этапы работ</div>
+            </div>
+            <div class="fourth-section-one-line">
+                <div class="fourth-section-one-line-block">
+                    <div class="fourth-section-one-line-block-img-one">1</div>
+                </div>
+                <div class="fourth-section-one-line-connection">
+                    <div class="fourth-section-one-line-connection-line"></div>
+                </div>
+                <div class="fourth-section-one-line-block">
+                    <div class="fourth-section-one-line-block-img-one">2</div>
+                </div>
+                <div class="fourth-section-one-line-connection">
+                    <div class="fourth-section-one-line-connection-line"></div>
+                </div>
+                <div class="fourth-section-one-line-block">
+                    <div class="fourth-section-one-line-block-img-one">3</div>
+                </div>
+            </div>
+            <div class="fourth-section-list-row-one">
+                <div class="fourth-section-list-row-item-one">
+                    <div class="fourth-section-list-row-one-line-block-img-one">1</div>
+                    <div class="fourth-section-list-row-img-one"><a></a></div>
+                    <div class="fourthsectionlistrowitemone">Заявка</div>
+                    <h2>Оставьте заявку на сайте или по номеру</h2>
+                    <div class="tel"><a href="tel:8 (800) 550-66-31">8 (800) 550-66-31</a></div>
+                </div>
+                <div class="fourth-section-list-row-item-two">
+                    <div class="fourth-section-list-row-one-line-block-img-one">2</div>
+                    <div class="fourth-section-list-row-img-two"><a></a></div>
+                    <div class="fourthsectionlistrowitemtwo">Замер</div>
+                    <h2>Наш инженер бесплатно выезжает к Вам на объект и производит замеры</h2>
+                </div>
+                <div class="fourth-section-list-row-item-three">
+                    <div class="fourth-section-list-row-one-line-block-img-one">3</div>
+                    <div class="fourth-section-list-row-img-three"><a></a></div>
+                    <div class="fourthsectionlistrowitemthree">Предложение</div>
+                    <h2>Составляется коммерческое предложение</h2>
+                </div>
+            </div>
+            <div class="fourth-section-one-line">
+                <div class="fourth-section-one-line-block">
+                    <div class="fourth-section-one-line-block-img-one">4</div>
+                </div>
+                <div class="fourth-section-one-line-connection">
+                    <div class="fourth-section-one-line-connection-line"></div>
+                </div>
+                <div class="fourth-section-one-line-block">
+                    <div class="fourth-section-one-line-block-img-one">5</div>
+                </div>
+                <div class="fourth-section-one-line-connection">
+                    <div class="fourth-section-one-line-connection-line"></div>
+                </div>
+                <div class="fourth-section-one-line-block">
+                    <div class="fourth-section-one-line-block-img-one">6</div>
+                </div>
+            </div>
+            <div class="fourth-section-list-row-two">
+                <div class="fourth-section-list-row-item-four">
+                    <div class="fourth-section-list-row-one-line-block-img-one">4</div>
+                    <div class="fourth-section-list-row-img-four"><a></a></div>
+                    <div class="fourthsectionlistrowitemfour">Договор</div>
+                    <h2>Наши специалисты заключают с Вами договор</h2>
+                </div>
+                <div class="fourth-section-list-row-item-five">
+                    <div class="fourth-section-list-row-one-line-block-img-one">5</div>
+                    <div class="fourth-section-list-row-img-five"><a></a></div>
+                    <div class="fourthsectionlistrowitemfive">Выполнение</div>
+                    <h2>Выполняются строительные работы на заданном участке</h2>
+                </div>
+                <div class="fourth-section-list-row-item-six">
+                    <div class="fourth-section-list-row-one-line-block-img-one">6</div>
+                    <div class="fourth-section-list-row-img-six"><a></a></div>
+                    <div class="fourthsectionlistrowitemsix">Оплата</div>
+                    <h2>По итогу Вы оплачиваете сумму согласно заключенному договору</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--5-я секция-->
+<section id="fifth-section">
+    <div class="wrapper-fifth">
+        <div class="fifth-section-content">
+            <div class="fifth-section-block-one">
+                <div class="fifth-section-title">
+                    <div class="fifthsectiontitle">Мы гарантируем</div>
+                </div>
+                <div class="fifth-section-block-one-item">
+                    <img src="img/icons/done-icon.png" alt="Выполнено">
+                    <div class="fifth-section-block-one-text-one">Соблюдение технологий на всех этапах работ</div>
+                </div>
+                <div class="fifth-section-block-one-item">
+                    <img src="img/icons/done-icon.png" alt="Выполнено">
+                    <div class="fifth-section-block-one-text-two">Отсутствие несогласованных изменений в проектной документации</div>
+                </div>
+                <div class="fifth-section-block-one-item">
+                    <img src="img/icons/done-icon.png" alt="Выполнено">
+                    <div class="fifth-section-block-one-text-three">Реализацию утвержденных проектных решений точно в срок</div>
+                </div>
+                <div class="fifth-section-block-one-item-last">
+                    <div class="fifth-section-block-one-text-last">Мы тщательно контролируем качество выполняемых работ и даем гарантию!</div>
+                </div>
+            </div>
+            <div class="fifth-section-block-two">
+                <div class="fifth-section-block-two-item">
+                <img src="img/bg/fifth-photo.jpg" alt="Выполнено"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--6-я секция-->
+<section id="sixth-section">
+    <div class="wrapper-sixth">
+        <div class="sixth-section-title">
+            <div class="sixthsectiontitle">Возможные варианты оплаты</div>
+        </div>
+        <div class="sixth-section-block">
+            <div class="sixth-section-item"><div class="sixth-section-item-block-one"></div>Оплата возможна с отсрочкой платежа</div>
+            <div class="sixth-section-item"><div class="sixth-section-item-block-two"></div>Оплата в рассрочку (обговаривается индивидуально)</div>
+            <div class="sixth-section-item"><div class="sixth-section-item-block-three"></div>Оплата по безналичному расчету: с ндс / без ндс</div>
+        </div>
+    </div>
+</section>
+
+<!--7-я секция-->
+<section id="seventh-section">
+    <div class="wrapper-seventh">
+        <div class="seventh-section-title">
+            <div class="seventhsectiontitle">С кем мы работаем</div>
+        </div>
+        <div class="seventh-section-block-one">
+            <div class="seventh-section-item-block-one">
+                <img src="img/icons/skladskiyepomescheniya.jpg" alt="Складские помещения">
+                <text><p>Складские помещения</p></text>
+            </div>
+            <div class="seventh-section-item-block-one">
+                <img src="img/icons/proizvodstvenniyepomescheniya.jpg" alt="Производственные помещения">
+                <text><p>Производственные помещения</p></text>
+            </div>
+            <div class="seventh-section-item-block-one">
+                <img src="img/icons/medicinskiyeuchrezhdeniya.jpg" alt="Медицинские учреждения">
+                <text><p>Медицинские учреждения</p></text>
+            </div>
+            <div class="seventh-section-item-block-one">
+                <img src="img/icons/obrazovatelniyeuchrezhdeniya.jpg" alt="Образовательные учреждения">
+                <text><p>Образовательные учреждения</p></text>
+            </div>
+        </div>
+        <div class="seventh-section-block-two">
+            <div class="seventh-section-item-block-two">
+                <img src="img/icons/torgoviyecentri.jpg" alt="Торговые центры">
+                <text><p>Торговые центры</p></text>
+            </div>
+            <div class="seventh-section-item-block-two">
+                <img src="img/icons/ofisniyepomescheniya.jpg" alt="Офисные помещения">
+                <text><p>Офисные помещения</p></text>
+            </div>
+            <div class="seventh-section-item-block-two">
+                <img src="img/icons/zhilischnoyestroitelstvo.jpg" alt="Жилищное строительство">
+                <text><p>Жилищное строительство</p></text>
+            </div>
+            <div class="seventh-section-item-block-two">
+                <img src="img/icons/avtoservisi.jpg" alt="Автосервисы, сто">
+                <text><p>Автосервисы, сто</p></text>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--8-я секция-->
+<section id="eighth-section">
+    <div class="wrapper-eighth">
+        <div class="eighth-section-title">
+            <div class="eighthsectiontitle">Оставьте заявку на бесплатный расчет стоимости работ</div>
+        </div>
+        <div class="eighth-section-block">
+            <div class="eighth-section-block-form">
+                <form action="submit_eight.php" method="post" class="form-eight" name="form-eight-app" id="form-eight-app">
+                    <input type="hidden" name="info" value="Оставьте заявку на расчет стоимости работ">
+                    <input type="text" name="name" class="input-eight input-form-eight input-name-eight" placeholder="Ваше имя..." required>
+                    <input type="text" name="phone" class="input-eight input-form-eight input-phone-eight text-input text-input-phone" placeholder="Ваш телефон..." required>
+                    <input type="submit" name="submit-form-eight" class="btn" disabled="" value="Получить точную смету сегодня" data-target="" class="form-eight-app">
+                    <div class="checkbox-form-eight">
+                        <input type="checkbox" id="checkbox-form-id" class="access_eight" value="ЗАЯВКА ОТ КЛИЕНТА!" name="access_eight[]" onclick="check_eight();">
+                        <a href="politicaconfidencialnosti.html">Я ознакомлен и согласен с <span>Политикой в отношении обработки персональных данных.</span></a>
+                    </div>
+                </form>
+                <script>function check_eight(){var submit = document.getElementsByName('submit-form-eight')[0]; if(document.getElementById('checkbox-form-id').checked)submit.disabled = ''; else submit.disabled = 'disabled';}
+                </script>
+            </div>
+            <div class="eighth-section-block-img">
+                <img src="img/bg/eighth-img.png" alt="Инструменты">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--9-я секция-->
+<section id="ninth-section">
+    <div class="wrapper-ninth">
+        <div class="ninth-section-title">
+            <div class="ninthsectiontitle">Наши партнеры</div>
+        </div>
+        <div class="ninth-section-list-row">
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="img/icons/11.png"></div>
+                <div class="item"><img src="img/icons/12.png"></div>
+                <div class="item"><img src="img/icons/13.png"></div>
+                <div class="item"><img src="img/icons/14.png"></div>
+                <div class="item"><img src="img/icons/15.png"></div>
+                <div class="item"><img src="img/icons/16.png"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--слайдер на 10-й секции-->
+<div id="imagemodalone" class="modalblockone">
+    <span class="imagecloseone"><img src="img/icons/close.png" alt="Закрытие"></span>
+    <img class="modal-content-one" id="img01" src="img/icons/slide-one.png" alt="Слайд1">
+    <div id="captionone"></div>
+</div>
+<div id="imagemodaltwo" class="modalblocktwo">
+    <span class="imageclosetwo"><img src="img/icons/close.png" alt="Закрытие"></span>
+    <img class="modal-content-two" id="img02" src="img/icons/slide-two.png" alt="Слайд2">
+    <div id="captiontwo"></div>
+</div>
+<div id="imagemodalthree" class="modalblockthree">
+    <span class="imageclosethree"><img src="img/icons/close.png" alt="Закрытие"></span>
+    <img class="modal-content-three" id="img03" src="img/icons/slide-three.png" alt="Слайд3">
+    <div id="captionthree"></div>
+</div>
+<div id="imagemodalfour"class="modalblockfour">
+    <span class="imageclosefour"><img src="img/icons/close.png" alt="Закрытие"></span>
+    <img class="modal-content-four" id="img04" src="img/icons/slide-four.png" alt="Слайд4">
+<div id="captionfour"></div>
+</div>
+
+<!--10-я секция-->
+<section id="tenth-section">
+    <div class="wrapper-tenth">
+        <div class="tenth-section-title">
+            <div class="tenthsectiontitle">Почитайте отзывы наших клиентов</div>
+        </div>
+        <div class="tenth-section-block">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a><img id="myimgone" class="d-block w-100" src="img/icons/slide-one.png" alt="Детская краевая клиническая больница"></a>
+                            <div class="carousel-item-block-content-one">
+                                <div class="tenthsectiontitleone">"Детская краевая клиническая больница"</div>
+                                <h2>Ознакомьтесь более подробно, просто нажав на фотографию</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a><img id="myimgtwo" class="d-block w-100" src="img/icons/slide-two.png" alt="ОАО Филип моррис кубань"></a>
+                            <div class="carousel-item-block-content-two">
+                                <div class="tenthsectiontitletwo">ОАО "Филип моррис кубань"</div>
+                                <h2>Ознакомьтесь более подробно, просто нажав на фотографию</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a><img id="myimgthree" class="d-block w-100" src="img/icons/slide-three.png" alt="Грамота"></a>
+                            <div class="carousel-item-block-content-three">
+                                <div class="tenthsectiontitlethree">"Грамота"</div>
+                                <h2>Ознакомьтесь более подробно, просто нажав на фотографию</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a><img id="myimgfour" class="d-block w-100" src="img/icons/slide-four.jpeg" alt="Благодарственное письмо"></a>
+                            <div class="carousel-item-block-content-four">
+                                <div class="tenthsectiontitlefour">"Благодарственное письмо"</div>
+                                <h2>Ознакомьтесь более подробно, просто нажав на фотографию</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+            </div>
+        </div>
+    </div>
+
+<!--Подключение ТИЦ-->
+<div class="tic"></--><a href="http://pr-cy.ru/a/ryus.ooo" target="_blank"><img src="http://counter.pr-cy.ru/prcy/ryus.ooo" alt="Счетчик тИЦ и PR"></a></div>
+</section>
+
+<!--11-я секция-->
+<section id="eleventh-section">
+    <div class="wrapper-eleventh">
+        <div class="eleventh-section-list-row">
+            <div class="eleventh-section-list-row-one">
+                <div class="eleventh-section-title">
+                    <div class="contactstitle">Контакты</div>
+                </div>
+                <div class="ost">
+                    Остались вопросы?
+                </div>
+                    Позвоните нам прямо сейчас!
+                <div class="tel">
+                    <a href="tel:8(800)550-66-31">8(800)550-66-31</a>
+                </div>
+                    или<br> закажите обратный звонок, <br>и мы свяжемся с вами.
+                <h3>Звонок по России Бесплатный</h3>
+                <a href="#call" data-js="open" class="callback callback_ftr fancybox" data-target="backCall">Заказать обратный звонок</a>
+                <span>© 2018 Все права защищены  |  СК РЮС</span>
+                <div class="socials">
+                    <div class="one"><a href="https://www.instagram.com/skryus_krd/"><i class="fab fa-instagram"></i></a></div>
+                    <div class="two"><a href="https://www.facebook.com/alexander.loschakov.9"><i class="fab fa-facebook-f"></i></a></div>
+                    <div class="three"><a href="https://vk.com/skryus"><i class="fab fa-vk"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--карта на 11-й секции-->
+<div id="map">
+    <div class="inner-form">
+        <div class="eleventh-section-title">
+            <div class="contactstitle">Контакты</div>
+        </div>
+        <div class="ost">
+            Остались вопросы?
+        </div>
+            Позвоните нам прямо сейчас!
+        <div class="tel">
+            <a href="tel:8(800)550-66-31">8(800)550-66-31</a>
+        </div>
+            или<br> закажите обратный звонок, <br>и мы свяжемся с вами.
+        <h3>Звонок по России Бесплатный</h3>
+        <a href="#call" data-js="open" class="callback callback_ftr fancybox" data-target="backCall">Заказать обратный звонок</a>
+        <span>© 2018 Все права защищены  |  СК РЮС</span>
+        <div class="socials">
+            <div class="one"><a href="https://www.instagram.com/skryus_krd/"><i class="fab fa-instagram"></i></a></div>
+            <div class="two"><a href="https://www.facebook.com/alexander.loschakov.9"><i class="fab fa-facebook-f"></i></a></div>
+            <div class="three"><a href="https://vk.com/skryus"><i class="fab fa-vk"></i></a></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/popup.js" type="text/javascript"></script>
+<script src="js/popupimg.js" type="text/javascript"></script>
+<script src="js/scrolldownmenu.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/fSlider.js" type="text/javascript"></script>
+<script src="js/fSlider.min.js" type="text/javascript"></script>
+<script src="js/responsive.js" type="text/javascript"></script>
+
+<!--старый слайдер на 9-ой секции - отключён-->
+<script>$('.centerSlider').fSlider({numOfNextSlides: 1,slidesToShow: 1,showArrows: false,responsive: false,centerMode: true});</script>
+
+<!--яндекс метрика-->
+<script type="text/javascript">(function (d, w, c) {(w[c] = w[c] || []).push(function() {try{w.yaCounter48657458 = new Ya.Metrika({id:48657458,clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true}); }catch(e){ }});var n = d.getElementsByTagName("script")[0],s = d.createElement("script"),f = function(){ n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if(w.opera == "[object Opera]"){d.addEventListener("DOMContentLoaded", f, false); }else{f(); }})(document, window, "yandex_metrika_callbacks");</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/48657458" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+<script data-skip-moving="true">(function(w,d,u){var s=d.createElement('script'); s.async=1;s.src=u+'?'+(Date.now()/60000|0); var h=d.getElementsByTagName('script')[0]; h.parentNode.insertBefore(s,h); })(window,document,'https://cdn.bitrix24.ru/b6266289/crm/site_button/loader_1_fz3vju.js');</script>
+
+<!--слайдер на 9-ой секции-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>СК РЮС Краснодар | Техническое обслуживание, ремонт зданий, сооружение.</title>
+<link rel="shortcut icon"href="img/icons/favicon.ico">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"type="text/javascript"></script>
+<style>
+    
+* {
+    box-sizing: border-box;
+}
+    
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #ededed;
+}
+    
+#header-top {
+    background: #ededed;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.wrapper-header-top {
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+    
+.header-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+    
+.header-block-logo {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+}
+    
+.header-block img {
+    vertical-align: middle;
+    border-style: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+}
+    
+.header-block-text {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+}
+    
+.header-block-contacts {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+}
+    
+.header-block-contacts-inner-form {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    text-transform: none;
+    width: 100%;
+    max-width: 330px;
+    height: 100%;
+    float: right;
+    color: #181818;
+    line-height: 25px;
+}
+    
+.header-block-contacts-inner-form .tel a {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    display: block;
+    margin: 8px 0;
+    color: #181818;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    cursor: unset;
+}
+    
+.header-block-contacts-inner-form h3 {
+    font-size: 14px;
+    margin: 0px 0;
+}
+    
+.email-top {
+    font-size: 20px;
+    text-transform: none;
+}
+    
+.callback {
+    display: block;
+    font-size: 17px;
+    margin: 0px auto 0 auto;
+    width: 100%;
+    max-width: 280px;
+    height: 40px;
+    background: #ffe200;
+    border-radius: 20px;
+    padding: 9px 0 0;
+    text-align: center;
+    color: #000000!important;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: none;
+    text-decoration: none!important;
+    text-shadow: none;
+    transition: all 0.3s;
+    margin-top: 0px;
+    animation: color 1s infinite;
+}
+    
+.popup {
+    background: rgba(100, 100, 100, 0.6);
+    position: fixed;
+    display: none;
+    z-index: 5000;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+    
+.popup > div {
+    position: fixed;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+    padding: 30px 15px;
+    width: auto;
+    max-width: 400px;
+    z-index: 5001;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    border-radius: 0%;
+    overflow-x: hidden;
+    height: auto;
+    padding: 5px;
+    border-radius: 20px;
+}
+    
+.popup .formtitleone {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: none;
+    color: #33363b;
+    margin-bottom: 0px;
+}
+    
+.form-header-top {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+    
+input {
+    outline: none;
+    border: 2px solid #9a9a9a;
+    border-radius: 10px!important;
+}
+    
+input[type="text"].input-name-header-top {
+    background: url(./img/icons/user.png) 12px 16px no-repeat #fff;
+}
+    
+input[type="text"].input-form-header-top {
+    width: 280px;
+    margin: 5px 8px;
+}
+    
+input[type="text"].input-header-top {
+    width: 280px;
+    height: 50px;
+    margin: 20px 0 0;
+    padding: 0 0 0 40px;
+    color: #030303;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    text-transform: none;
+    border-radius: 5px;
+    border: 1px solid #99a3b4;
+    box-shadow: none;
+}
+    
+input[type="text"].input-phone-header-top {
+    background: url(./img/icons/smartphone.png) 12px 16px no-repeat #fff;
+}
+    
+input[type="text"].input-form-header-top {
+    width: 280px;
+    margin: 5px 8px;
+}
+    
+input[type="submit"].btn {
+    background: #ffe200;
+    box-shadow: none;
+    border-radius: 3px;
+    width: 280px;
+    height: 48px;
+    margin: 10px auto;
+    cursor: pointer;
+    border: 0;
+    color: #030303;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    text-transform: none;
+    transition: all 0.3s;
+    width: 100%;
+    max-width: 280px;
+}
+    
+input {
+    outline: none;
+    border: 2px solid #9a9a9a;
+    border-radius: 10px!important;
+}
+    
+.checkbox-form-header-top a {
+    color: #171717;
+    text-decoration: none;
+    text-transform: none;
+}
+    
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+    
+.checkbox-form-header-top {
+    display: flex;
+    flex-direction: row;
+    color: #171717;
+    text-decoration: none;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    width: 280px;
+    line-height: 12px;
+    font-size: 12px;
+}
+    
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+    width: 47px;
+    height: 15px;
+    margin: 5px;
+    padding: 0 0 0px 22px;
+}
+    
+.header-block-text {
+    background: url(./img/bg/text-brackets.png) no-repeat;
+    width: 519px;
+    display: none;
+}
+    
+.header-block-text a {
+    float: left;
+    padding: 16px 1px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 25px;
+    text-transform: none;
+    color: #181818!important;
+}
+    
+.header-block-links {
+    display: flex;
+    font-size: 25px;
+    color: #181818!important; 
+}
+    
+.tomain a {
+    font-size: 25px;
+    color: #181818!important;    
+}
+    
+@media (min-width: 790px) {
+.header-block-text a {
+    background: url(./img/bg/text-brackets.png) no-repeat;
+    width: 519px;
+}
+}
+    
+@media (max-width: 790px) and (min-width: 320px) {
+#header-top {
+    padding-top: 50px;
+}
+}
+    
+@media (max-width: 1220px) and (min-width: 320px) {
+.header-block {
+    flex-direction: column;
+}
+}
+    
+@media (max-width: 790px) and (min-width: 320px) {
+.header-block {
+    flex-direction: column;
+}
+}
+    
+@media (max-width: 700px) and (min-width: 320px) {
+a[href^="tel:"] {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: unset;
+}
+}
+    
+@media (max-width: 790px) and (min-width: 320px) {
+.header-block-contacts h3 {
+    display: none;
+}
+}
+    
+@media (max-width: 790px) and (min-width: 320px) {
+.tim {
+    display: none;
+}
+}
+    
+@media (max-width: 790px) and (min-width: 320px) {
+.email-top {
+    display: none;
+}
+}
+    
+@media (max-width: 790px) and (min-width: 320px) {
+.header-block-text a {
+    display: none;
+}
+}
+    
+@media (max-width: 790px) and (min-width: 320px) {
+.header-block-text a {
+    width: auto;
+}
+}
+    
+@media (max-width: 600px) and (min-width: 320px) {
+.tab button {
+font-size: 10px!important;        
+}
+}    
+    
+@-webkit-keyframes color{from{background:#ffe200;}
+to{background:#93872bb3;}
+}
+@keyframes color{from{background:#ffe200;}
+to{background:#93872bb3;}
+}
+    
+li {
+    border-bottom: 1px solid #CCC;
+    font-size: 14px;
+    padding: 5px 7px;
+    color: #444;
+    text-align: left;
+    list-style: none;
+    background: #ffffff;
+    max-width: 900px;
+    width: 100%;
+}
+    
+.left-right-block {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: space-between;
+    align-items: space-between;
+    -webkit-box-pack: space-between;
+    justify-content: space-between;
+}
+
+.left-block {
+    display: flex;
+}
+    
+.right-block {
+    display: flex;
+}
+
+/* Style the tab */
+.tab {
+    float: left;
+    background-color: #ededed;
+    width: 28%;
+    height: 595px;
+    margin: 0 10px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: #081272;
+    color: #ffffff;
+    padding: 22px 16px;
+    width: 100%;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #4c59c0;
+    border-radius: 10px;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #303da1;
+    border-radius: 20px;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    width: 98%;
+    border-left: none;
+    border-radius: 20px;
+    height: 450px;
+    overflow-y: auto;
+    background-color: #ededed;
+    margin: 20px 0px;
+}
+    
+.tabouter {
+    float: right;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1200px;
+    height: 522px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+    
+.tabcolumn  {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-button {
+    width: 100%;
+    max-width: 285px;
+    margin-top: 20px;
+    animation: unset!important;
+}
+
+.bottom-button a {
+    animation: unset!important;    
+}
+.bottom-button a:hover {
+    background: #b8ac4e;
+}
+    
+.callbackbottom{display:block;font-size:17px;margin:0px auto 0 auto;width:100%;max-width:280px;height:40px;background:#ffe200;border-radius:20px;padding:9px 0 0;text-align:center;color:#000000!important;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;text-transform:none;text-decoration:none!important;text-shadow:none;transition:all 0.3s;margin-top:0px;animation:unset;box-shadow: 1px 2px 3px 3px rgb(8, 18, 114);}
+
+table {
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-collapse: separate;
+    border-spacing: 2px;
+    background-color: #ffffff;
+}
+
+th, td {
+    text-align: center;
+    padding: 2px;
+}
+
+tr:nth-child(even) {
+    background-color: #ffe200;
+}
+
+</style>
+</head>
+<body>
+
+<section id="header-top">
+    <div class="wrapper-header-top">
+        <div class="header-block">
+            <div class="header-block-logo">
+                <a href="http://skryus.ru"><img src="img/icons/logo.png" alt="Рюс логотип"></a>
+            </div>
+            <div class="header-block-text">
+                <a>Полный спектр строительных услуг для юридических и физических лиц</a>
+            </div>
+            <div class="header-block-links">
+                <div class="tomain"><a href="http://skryus.ru">[ Возврат на главную ]</a></div>
+            </div>
+            <div class="header-block-contacts">
+                <div class="header-block-contacts-inner-form">
+                    <div class="adr">г. Краснодар, ул. Садовая, 112</div>
+                        <div class="tel">
+                            <a href="tel:8(800)550-66-31">8(800)550-66-31</a>
+                        </div>
+                        <h3>Звонок по России Бесплатный</h3>
+                        <div class="tim">пн-вс: 08:00 - 18:00</div>
+                        <div class="email-top">e-mail: sk@ryus.ooo</div>
+                        <a href="#call" data-js="open" class="callback fancybox" data-target="backCall">Заказать обратный звонок</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="popup" style="display:none;"><div class="wrapper"><div class="formtitleone">Обратный звонок</div><form action="submit_header_top.php" method="post" class="form-header-top" name="form-header-top-app" id="form-header-bottom-app"><input type="hidden" name="info" value="Оставьте заявку на расчет стоимости работ"><input type="text" name="name" class="input-header-top input-form-header-top input-name-header-top" placeholder="Ваше имя..." required=""><input type="text" name="phone" class="input-header-top input-form-header-top input-phone-header-top text-input text-input-phone" placeholder="Ваш телефон..." required=""><input type="submit" name="submit-form-header-top" class="btn" disabled="" value="Отправить" data-target=""><div class="checkbox-form-header-top"><input type="checkbox" id="checkbox-form-id-header-top" class="access_header_top" value="ЗАЯВКА ОТ КЛИЕНТА!" name="access_header_top[]" onclick="check_header_top();"><a href="politicaconfidencialnosti.html">Я ознакомлен и согласен с <span>Политикой в отношении обработки персональных данных.</span></a></div></form><script>function check_header_top() {var submit=document.getElementsByName('submit-form-header-top')[0];if (document.getElementById('checkbox-form-id-header-top').checked)submit.disabled = '';else submit.disabled = 'disabled';}</script></div></div>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'TableOne')" id="defaultOpen">Плиточные работы</button>
+  <button class="tablinks" onclick="openCity(event, 'TableTwo')">Сантехнические работы</button>
+  <button class="tablinks" onclick="openCity(event, 'TableThree')">Сварочные работы</button>
+  <button class="tablinks" onclick="openCity(event, 'TableFour')">Гипсокартонные работы</button>
+  <button class="tablinks" onclick="openCity(event, 'TableFive')">Внутренняя отделка помещений</button>
+  <button class="tablinks" onclick="openCity(event, 'TableSix')">Кровельные работы (металлопрофиль)</button>
+  <button class="tablinks" onclick="openCity(event, 'TableSeven')">Кровельные работы (направляемая кровля) помещений</button>
+  <button class="tablinks" onclick="openCity(event, 'TableEight')">Бетонные работы</button>
+</div>
+
+<div class="tabcolumn">
+
+<div class="tabouter">
+
+<div id="TableOne" class="tabcontent">
+  <h3>Плиточные работы</h3>
+  <table>
+      <tr><th>Название</th><th>Цена, руб</th><th>Ед. изм.</th></tr>
+      <tr><td>Облицовка стен плиткой</td><td>700</td><td>м2</td></tr>
+      <tr><td>Укладка керамогранита</td><td>700</td><td>м2</td></tr>
+      <tr><td>Укладка Керамогранита по диагонали</td><td>700</td><td>м2</td></tr>
+      <tr><td>Укладка плитки на пол</td><td>600</td><td>м2</td></tr>
+      <tr><td>Укладка плитки на пол по диагонали</td><td>650</td><td>м2</td></tr>
+      <tr><td>Монтаж внешних и внутренних уголков</td><td>60</td><td>м2</td></tr>
+      <tr><td>Устройство дверных и оконных откосов из керамической плитки</td><td>350</td><td>мп</td></tr>
+      <tr><td>Сверление отверстий в плитке (D < 50)</td><td>220</td><td>шт</td></tr>
+      <tr><td>Сверление отверстий в плитке (D > 50)</td><td>350</td><td>шт</td></tr>
+      <tr><td>Монтаж лючка смотрового (невидимка) на шарнирах</td><td>1500</td><td>шт</td></tr>
+      <tr><td>Запил торцов у плитки под 45 градусов</td><td>500</td><td>мп</td></tr>
+      <tr><td>Установка лючка</td><td>500</td><td>шт</td></tr>
+      <tr><td>Демонтаж плитки со стен, полов</td><td>150</td><td>м2</td></tr>
+  </table>
+</div>
+
+<div id="TableTwo" class="tabcontent">
+  <h3>Сантехнические работы</h3>
+  <table>
+      <tr><th>Название</th><th>Цена, руб</th><th>Ед. изм.</th></tr>
+      <tr><td>Установка смесителя на раковину, мойку</td><td>700</td><td>шт</td></tr>
+      <tr><td>Установка смеситяеля для ванны (настенный с душем)</td><td>800</td><td>шт</td></tr>
+      <tr><td>Установка смеситяля на биде</td><td>800</td><td>шт</td></tr>
+      <tr><td>Установка смесителя на душевую кабину</td><td>1000</td><td>шт</td></tr>
+      <tr><td>Установка электронного смесителя</td><td>1500</td><td>шт</td></tr>
+      <tr><td>Установка смесителя терморегулирующего</td><td>1300</td><td>шт</td></tr>
+      <tr><td>Демонтаж смесителя</td><td>200</td><td>шт</td></tr>
+      <tr><td>Установка раковины с пьедесталом (тюльпан)</td><td>1500</td><td>шт</td></tr>
+      <tr><td>Установка раковины с тумбой (мойдодыр)</td><td>2500</td><td>шт</td></tr>
+      <tr><td>Установка раковины с тумбой (мойдодыр) и зеркалом</td><td>3000</td><td>шт</td></tr>
+      <tr><td>Установка раковины из искуственного камня</td><td>2000</td><td>шт</td></tr>
+      <tr><td>Установка кухонной мойки (нержавейка, акрил)</td><td>1500</td><td>шт</td></tr>
+      <tr><td>Выпил в столешнице под мойку</td><td>400</td><td>шт</td></tr>
+      <tr><td>Выпил в столешнице (искуственный камень) под мойку</td><td>1500</td><td>шт</td></tr>
+      <tr><td>Герметизация шва раковины</td><td>200</td><td>шт</td></tr>
+      <tr><td>Демонтаж раковины</td><td>400</td><td>шт</td></tr>
+      <tr><td>Установка унитаза</td><td>2000</td><td>шт</td></tr>
+      <tr><td>Установка унитаза навесного (с инсталляцией)</td><td>4000</td><td>шт</td></tr>
+      <tr><td>Установка биде навесного (с инсталляцией)</td><td>4000</td><td>шт</td></tr>
+      <tr><td>Установка биде напольного</td><td>2000</td><td>шт</td></tr>
+      <tr><td>Установка писсуара</td><td>1600</td><td>шт</td></tr>
+      <tr><td>Регулировка арматура унитаза</td><td>300</td><td>шт</td></tr>
+      <tr><td>Демонтаж биде и унитазов</td><td>500</td><td>шт</td></tr>
+      <tr><td>Установка акриловой / стальной ванны</td><td>3000</td><td>шт</td></tr>
+      <tr><td>Установка чугунной ванны</td><td>4000</td><td>шт</td></tr>
+      <tr><td>Установка ванны с гидромассажем (джакузи)</td><td>5000</td><td>шт</td></tr>
+      <tr><td>Монтаж экрана под ванну</td><td>500</td><td>шт</td></tr>
+      <tr><td>Демонтаж акриловой ванны (без выноса)</td><td>от 500</td><td>шт</td></tr>
+      <tr><td>Демонтаж чугунной / стальной ванны (без выноса)</td><td>800</td><td>шт</td></tr>
+      <tr><td>Установка душевого уголка</td><td>3000</td><td>шт</td></tr>
+      <tr><td>Установка душевой колонки</td><td>1500</td><td>шт</td></tr>
+      <tr><td>Демонтаж душевой кабины</td><td>1000</td><td>шт</td></tr>
+      <tr><td>Установка и подключение душевой кабины (простая)</td><td>от 3000</td><td>шт</td></tr>
+      <tr><td>Установка и подключение душевой кабины (с гидромассажем)</td><td>от 5000</td><td>шт</td></tr>
+      <tr><td>Сборка и установка душевой кабины с джакузи (душевой бокс)</td><td>от 7000</td><td>шт</td></tr>
+      <tr><td>Гидроизоляция швов душевой кабины</td><td>500</td><td>шт</td></tr>
+      <tr><td>Установка радиатора отопления (без применения сварки)</td><td>2500</td><td>шт</td></tr>
+      <tr><td>Установка радиатора отопления (с применением сварки)</td><td>3500</td><td>шт</td></tr>
+      <tr><td>Демонтаж радиатора отопления (без выноса)</td><td>от 400</td><td>шт</td></tr>
+      <tr><td>Монтаж циркуляционного насоса</td><td>1700</td><td>шт</td></tr>
+      <tr><td>Монтаж твердотопливного котла</td><td>10000</td><td>шт</td></tr>
+      <tr><td>Монтаж электрокотла до 9кВт</td><td>6000</td><td>шт</td></tr>
+      <tr><td>Монтаж настенного одноконтурного котла до 30 кВт</td><td>10000</td><td>шт</td></tr>
+      <tr><td>Монтаж настенного двухконтурного котла до 30 кВт</td><td>12000</td><td>шт</td></tr>
+      <tr><td>Монтаж группы безопасности</td><td>900</td><td>шт</td></tr>
+      <tr><td>Монтаж расширительного бака</td><td>1600</td><td>шт</td></tr>
+      <tr><td>Пуско-наладочные работы котельного оборудования</td><td>6000</td><td>шт</td></tr>
+      <tr><td>Опрессовка котельного оборудования</td><td>2500</td><td>шт</td></tr>
+      <tr><td>Проход межэтажного перекрытия</td><td>500</td><td>шт</td></tr>
+      <tr><td>Монтаж точки водоснабжения (подводка воды к потребителю, крепление водорозеток)</td><td>2000</td><td>шт</td></tr>
+      <tr><td>Монтаж трубопроводов (стояков) полипропилен, металлопластик (пайка, резьбовые и прессовые соединения)</td><td>200</td><td>мп</td></tr>
+      <tr><td>Утепление трубопровода</td><td>50</td><td>мп</td></tr>
+      <tr><td>Гидравлическое испытание системы водоснабжения</td><td>450</td><td>точка</td></tr>
+      <tr><td>Установка шарового вентиля, крана</td><td>500</td><td>шт</td></tr>
+      <tr><td>Замена стояка канализации (диаметр 50) в квартире</td><td>2500</td><td>шт</td></tr>
+      <tr><td>Замена стояка канализации (диаметр 100) в квартире</td><td>3000</td><td>шт</td></tr>
+      <tr><td>Замена крестовины унитаза</td><td>1000</td><td>шт</td></tr>
+      <tr><td>Проход межэтажного перекрытия</td><td>500</td><td>шт</td></tr>
+      <tr><td>Монтаж точки канализации (подводка канализации к потребителю, крепление вывода)</td><td>1000</td><td>шт</td></tr>
+      <tr><td>Монтаж трубопроводов (стояков) канализации диаметром 110</td><td>150</td><td>мп</td></tr>
+      <tr><td>Установка полотенцесушителя</td><td>1500</td><td>шт</td></tr>
+      <tr><td>Установка счетчика воды</td><td>1000</td><td>шт</td></tr>
+      <tr><td>Замена счетчика воды</td><td>500</td><td>шт</td></tr>
+      <tr><td>Демонтаж фановых, водопроводных труб</td><td>200</td><td>мп</td></tr>
+  </table>
+</div>
+
+<div id="TableThree" class="tabcontent">
+  <h3>Сварочные работы</h3>
+  <table>
+      <tr><th>Название</th><th>Цена, руб</th><th>Ед. изм.</th></tr>
+      <tr><td>Выезд сварщика на объект</td><td>от 500</td><td>-</td></tr>
+      <tr><td>Сварочные работы сварка труб</td><td>от 500</td><td>стык</td></tr>
+      <tr><td>Сварочные работы различных типов предметов</td><td>от 500</td><td>стык, точка</td></tr>
+      <tr><td>Сварка ограждений, ворота различные решётки</td><td>от 1200</td><td>мп</td></tr>
+      <tr><td>Монтаж забора, сварка рабица сетка</td><td>от 400</td><td>мп</td></tr>
+      <tr><td>Складские помещения: стойки, стеллажи, мебель</td><td>от 1900</td><td>мп</td></tr>
+      <tr><td>Металлический каркас забора, простой</td><td>от 500</td><td>м2</td></tr>
+      <tr><td>Сетка рабица</td><td>от 100</td><td>стык</td></tr>
+      <tr><td>Забор из металлопрофиля</td><td>от 100</td><td>стык</td></tr>
+      <tr><th>Секции ограждения</th></tr>
+      <tr><td>Обычные сварные</td><td>от 1500</td><td>шт</td></tr>
+      <tr><td>Декоративные</td><td>от 5000</td><td>шт</td></tr>
+      <tr><td>Раздвижные</td><td>от 3000</td><td>шт</td></tr>
+      <tr><td>Кованные декоративные</td><td>от 5000</td><td>шт</td></tr>
+      <tr><td>Простые сваренные</td><td>от 1300</td><td>м2</td></tr>
+      <tr><td>Своеобразные декоративные</td><td>от 2500</td><td>м2</td></tr>
+      <tr><td>Переносные ограждения</td><td>от 1200</td><td>м2</td></tr>
+      <tr><td>Сварочные конструкции, изделия по чертежу клиента</td><td>договорная</td><td>-</td></tr>
+      <tr><td>Разовые, небольшие сварочные работы</td><td>договорная</td><td>-</td></tr>  
+  </table>
+</div>
+
+<div id="TableFour" class="tabcontent">
+  <h3>Гипсокартонные работы</h3>
+  <table>
+      <tr><th>Название</th><th>Цена, руб</th><th>Ед. изм.</th></tr>
+      <tr><td>Монтаж подвесного одноуровнегого потолка из гипсокартона на металлическом каркасе</td><td>400</td><td>м2</td></tr>
+      <tr><td>Монтаж многоуровневых потолков сложной, криволинейной формы из гипсокартона</td><td>700</td><td>м2</td></tr>
+      <tr><td>Устройство перегородок из гипсокартона на металлическом каркасе, обшитой по 1 слою с каждой стороны</td><td>500</td><td>м2</td></tr>
+      <tr><td>Устройство перегородок из гипсокартона на металлическом каркасе, обшитого в 2 слоя с каждой стороны</td><td>600</td><td>м2</td></tr>
+      <tr><td>Устройство коробок из гипсокартона</td><td>400</td><td>мп</td></tr>
+      <tr><td>Устройство арочных проемов из гипсокартона</td><td>3000</td><td>шт</td></tr>
+      <tr><td>Устройство карнизов прямолинейных высотой до 300 мм. из гипсокартона</td><td>400</td><td>мп</td></tr>
+      <tr><td>Монтаж откоса из гипсокартона</td><td>300</td><td>мп</td></tr>
+      <tr><td>Облицовка степ гипсокартоном на клею</td><td>300</td><td>м2</td></tr>
+      <tr><td>Монтаж гипсокартона на стены по металлическому каркасу в один слой без шумоизоляции и отделки</td><td>250</td><td>м2</td></tr>
+      <tr><td>Устройство из металлического каркаса для перегородок из ГКЛ</td><td>500</td><td>м2</td></tr>
+  </table>
+</div>
+
+<div id="TableFive" class="tabcontent">
+  <h3>Внутренняя отделка помещений</h3>
+    <table>
+        <tr><th>Название</th><th>Цена, руб</th><th>Ед. изм.</th></tr>
+        <tr><td>Грунтовка 1 раза</td><td>30</td><td>м2</td></tr>
+        <tr><td>Грунтовка 2 раза</td><td>50</td><td>м2</td></tr>
+        <tr><td>Демонтаж существующих кирпичных конструкций</td><td>2500</td><td>м3</td></tr>
+        <tr><th>Полы</th></tr>
+        <tr><td>Демонтаж цементно-песчаной стяжки до 50 мм</td><td>150</td><td>м2</td></tr>
+        <tr><td>Демонтаж цементно-песчаной стяжки от 50 мм</td><td>200</td><td>м2</td></tr>
+        <tr><td>Цементно-песчаная стяжка толщиной до 50 мм</td><td>400</td><td>м2</td></tr>
+        <tr><td>Цементно-песчаная стяжка толщиной от 50 мм до 70 мм</td><td>500</td><td>м2</td></tr>
+        <tr><td>Установка маяков</td><td>60</td><td>м2</td></tr>
+        <tr><td>Устройство армирования под стяжку</td><td>70</td><td>м2</td></tr>
+        <tr><td>Наливные (самовыравнивающиеся раствором) толщиной до 30 мм</td><td>300</td><td>м2</td></tr>
+        <tr><td>Устройство гидроизоляции пола пленкой ПВХ под стяжку</td><td>100</td><td>м2</td></tr>
+        <tr><td>Настил фанеры, или ДСП на готовое основание</td><td>200</td><td>м2</td></tr>
+        <tr><td>Настил паркета штучного на готовое основание</td><td>900</td><td>м2</td></tr>
+        <tr><td>Настил щитового паркета (ламинат) на готовое основание</td><td>350</td><td>м2</td></tr>
+        <tr><td>Циклевка / шлифовка паркета</td><td>500</td><td>м2</td></tr>
+        <tr><td>Шпатлевка паркета</td><td>200</td><td>м2</td></tr>
+        <tr><td>Покрытие паркета лаком в 2 слоя</td><td>300</td><td>м2</td></tr>
+        <tr><td>Настил линолеума, ковровых покрытий</td><td>300</td><td>м2</td></tr>
+        <tr><td>Монтаж плинтуса ПВХ</td><td>70</td><td>мп</td></tr>
+        <tr><td>Монтаж плинтуса деревянного</td><td>100</td><td>мп</td></tr>
+        <tr><td>Монтаж профильных порожков</td><td>200</td><td>мп</td></tr>
+        <tr><td>Окраска плинтуса</td><td>150</td><td>мп</td></tr>
+        <tr><td>Демонтаж паркета, паркетной доски</td><td>150</td><td>м2</td></tr>
+        <tr><td>Демонтаж старого плинтуса</td><td>50</td><td>мп</td></tr>
+        <tr><th>Стены</th></tr>
+        <tr><td>Снятие старых обоев</td><td>70</td><td>м2</td></tr>
+        <tr><td>Сбивка штукатурки</td><td>150</td><td>м2</td></tr>
+        <tr><td>Штукатурка до 3 см (по маякам)</td><td>250</td><td>м2</td></tr>
+        <tr><td>Штукатурка до 6 см (по маякам)</td><td>300</td><td>м2</td></tr>
+        <tr><td>Грунтовка откосов</td><td>80</td><td>мп</td></tr>
+        <tr><td>Шпаклёвка стен из ГКЛ</td><td>250</td><td>м2</td></tr>
+        <tr><td>Шпаклёвка стен под обои, текстурную окраску</td><td>250</td><td>м2</td></tr>
+        <tr><td>Шпаклёвка стен под окраску</td><td>300</td><td>м2</td></tr>
+        <tr><td>Окраска стен по шпаклёвке</td><td>150</td><td>м2</td></tr>
+        <tr><td>Оклейка обоями с подгоном рисунка</td><td>300</td><td>м2</td></tr>
+        <tr><td>Обшивка вагонкой, панелями</td><td>400</td><td>м2</td></tr>
+        <tr><td>Обработка углов помещения уголками и раскладками</td><td>100</td><td>мп</td></tr>
+        <tr><td>Наклейка малярной сетки</td><td>50</td><td>мп</td></tr>
+        <tr><td>Демонтаж стен и перегородок (петонблоки, шлакоблоки, кирпич)</td><td>500</td><td>м2</td></tr>
+        <tr><th>Окна</th></tr>
+        <tr><td>Монтаж стандартного окна ПВХ</td><td>1500</td><td>шт</td></tr>
+        <tr><td>Оконные откосы внутренняя штукатурка</td><td>350</td><td>мп</td></tr>
+        <tr><td>Шпаклевка откоса</td><td>250</td><td>мп</td></tr>
+        <tr><td>Установка подоконной столешницы (на готовое основание)</td><td>300</td><td>мп</td></tr>
+        <tr><td>Окраска откоса</td><td>150</td><td>мп</td></tr>
+        <tr><td>Демонтаж окна</td><td>300</td><td>м2</td></tr>
+        <tr><th>Двери</th></tr>
+        <tr><td>Установка дверного блока</td><td>2500</td><td>шт</td></tr>
+        <tr><td>Установка внутреннего откатного дверного блока</td><td>4000</td><td>шт</td></tr>
+        <tr><td>Монтаж доборной планки (до 5 см)</td><td>300</td><td>мп</td></tr>
+        <tr><td>Установка готовой арки</td><td>2500</td><td>шт</td></tr>
+        <tr><td>Установка замка</td><td>500</td><td>шт</td></tr>
+        <tr><td>Установка наличника</td><td>150</td><td>мп</td></tr>
+        <tr><td>Демонтаж двери межкомнатной</td><td>300</td><td>м2</td></tr>
+        <tr><th>Потолок</th></tr>
+        <tr><td>Штукатурка</td><td>500</td><td>м2</td></tr>
+        <tr><td>Грунтовка</td><td>50</td><td>м2</td></tr>
+        <tr><td>Шпаклёвка (первый слой)</td><td>250</td><td>м2</td></tr>
+        <tr><td>Шпаклёвка (финишный слой)</td><td>300</td><td>м2</td></tr>
+        <tr><td>Окраска за 2 раза</td><td>250</td><td>м2</td></tr>
+        <tr><td>Обшивка вагонкой, панелями</td><td>400</td><td>м2</td></tr>
+        <tr><td>Наклейка малярной сетки</td><td>50</td><td>м2</td></tr>
+        <tr><td>Устройство подвесного потолка АРМСТРОНГ</td><td>400</td><td>м2</td></tr>
+        <tr><td>Устройство подвесного потолка ГРИЛЬЯТО (без сборки ячеек)</td><td>350</td><td>м2</td></tr>
+        <tr><td>Демонтаж навесной конструкции потолка</td><td>150</td><td>м2</td></tr>
+    </table>
+</div>
+
+<div id="TableSix" class="tabcontent">
+  <h3>Кровельные работы (металлопрофиль)</h3>
+    <table>
+        <tr><th>Название</th><th>Цена, руб</th><th>Ед. изм.</th></tr>
+        <tr><td>Монтаж стропильной системы</td><td>300</td><td>м2</td></tr>
+        <tr><td>Гидроизоляция кровли</td><td>50</td><td>м2</td></tr>
+        <tr><td>Пароизоляция кровли</td><td>50</td><td>м2</td></tr>
+        <tr><td>Утепление кровли</td><td>50</td><td>м2</td></tr>
+        <tr><td>Укладка профнастила на готовую обрешётку</td><td>300</td><td>м2</td></tr>
+        <tr><td>Укладка металлочерепицы на готовую обрешётку</td><td>300</td><td>м2</td></tr>
+        <tr><td>Монтаж торцевых планок</td><td>200</td><td>мп</td></tr>
+        <tr><td>Монтаж карнизных планок</td><td>200</td><td>мп</td></tr>
+        <tr><td>Монтаж коньков</td><td>200</td><td>мп</td></tr>
+        <tr><td>Монтаж ендов</td><td>200</td><td>мп</td></tr>
+        <tr><td>Монтаж желоба</td><td>200</td><td>мп</td></tr>
+        <tr><td>Монтаж снегозадержаний</td><td>200</td><td>мп</td></tr>
+        <tr><td>Монтаж ограждений</td><td>250</td><td>мп</td></tr>
+        <tr><td>Монтаж водосточной системы</td><td>150</td><td>мп</td></tr>
+        <tr><td>Нанесение антисептика (кисть)</td><td>60</td><td>м2</td></tr>
+        <tr><td>Обработка деревянных конструкций огнебиозащитой (распыление)</td><td>50</td><td>м2</td></tr>
+        <tr><td>Монтаж кровли из профнастила под ключ</td><td>600</td><td>м2</td></tr>
+        <tr><td>Монтаж кровли из металлочерепицы под ключ</td><td>600</td><td>м2</td></tr>
+        <tr><td>Монтаж гибкой кровли под ключ</td><td>1200</td><td>м2</td></tr>
+    </table>
+</div>
+
+<div id="TableSeven" class="tabcontent">
+  <h3>Кровельные работы (направляемая кровля)</h3>
+    <table>
+        <tr><th>Название</th><th>Цена, руб</th><th>Ед. изм.</th></tr>
+        <tr><td>Устройство покрытия кровли из направляемых материалов в 1 слой по готовому основанию</td><td>150</td><td>м2</td></tr>
+        <tr><td>Устройство покрытия кровли из направляемых материалов в 2 слой по готовому основанию</td><td>220</td><td>м2</td></tr>
+        <tr><td>Устройство цементно-песчаной стяжки с разуклонкой до 50 мм</td><td>350</td><td>м2</td></tr>
+        <tr><td>Огрунтовка поверхности праймером</td><td>70</td><td>м2</td></tr>
+        <tr><td>Полная разработка существующей кровли (гидроизоляционного покрытия, стяжки, утеплителя) с вывозом мусора</td><td>250</td><td>м2</td></tr>
+    </table>
+</div>
+
+<div id="TableEight" class="tabcontent">
+  <h3>Бетонные работы</h3>
+    <table>
+        <tr><th>Название</th><th>Цена, руб</th><th>Ед. изм.</th></tr>
+        <tr><td>Устройство перекрытий до 3,3 м (опалубка инвентарная, армирование бетонирование) без учета механизмов и материалов</td><td>от 3500</td><td>м3</td></tr>
+        <tr><td>Стены, колонны до 3,3 м (опалубка инвентарная, армирование бетонирование) без учета механизмов и материалов</td><td>от 4500</td><td>м3</td></tr>
+        <tr><td>Фундаменты, сплошные плиты толщиной до 350 мм (армирование, опалубка, бетонирование)</td><td>от 4000</td><td>м3</td></tr>
+        <tr><td>Фундаменты, сплошные плиты толщиной от 350 мм (армирование, опалубка, бетонирование)</td><td>от 3200</td><td>м3</td></tr>
+        <tr><td>Фундаменты отдельностоящие (армирование, опалубка, бетонирование)</td><td>от 4500</td><td>м3</td></tr>
+        <tr><td>Фундаменты ленточные, глубина заложения от 0,5 м на песчаную подушку (подсыпку)</td><td>от 4200</td><td>м3</td></tr>
+        <tr><td>Устройство отмостки</td><td>от 2500</td><td>м3</td></tr>
+        <tr><td>Возведение опалубки из ламинированных фанерных щитов</td><td>1200</td><td>мп</td></tr>
+        <tr><td>Сборка / разборка опалубки для фундамента</td><td>250</td><td>м2</td></tr>
+        <tr><td>Сборка / разборка опалубки для плит перекрытий</td><td>350</td><td>м2</td></tr>
+        <tr><td>Армировние готовой сетки</td><td>100</td><td>м2</td></tr>
+        <tr><td>Армировние из арматурных прутьев ячейка не менее 100*100</td><td>300</td><td>м2</td></tr>
+        <tr><td>Армирование каркаса</td><td>1500</td><td>м3</td></tr>
+        <tr><td>Демонтаж ж/б конструкций</td><td>4000</td><td>м2</td></tr>
+        <tr><td>Изготовление ригеля</td><td>1500</td><td>мп</td></tr>
+        <tr><td>Изготовление монолитных стен подвалов</td><td>4500</td><td>м3</td></tr>
+        <tr><td>Изготовление бетонных лестниц (простые)</td><td>1000</td><td>мп</td></tr>
+        <tr><td>Изготовление бетонных лестниц (сложные)</td><td>1500</td><td>мп</td></tr>
+        <tr><td>Монтаж блоков ФБС</td><td>от 500</td><td>1 блок</td></tr>
+        <tr><td>Земельные работы</td><td>600</td><td>м2</td></tr>
+    </table>
+</div>
+
+</div>
+
+<div class="bottom-button"><a href="#call" data-js="open" class="callbackbottom fancybox" data-target="backCall">Рассчитать стоимость?</a></div>
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+<script src="js/popup.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+     
+</body>
+</html>

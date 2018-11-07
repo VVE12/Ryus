@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>СК РЮС Краснодар | Техническое обслуживание, ремонт зданий, сооружение.</title>
+<link rel="shortcut icon"href="img/icons/favicon.ico">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script>$(document).ready(function(){var touch = $('#touch-menu'); var menu = $('.menu'); $(touch).on('click', function(e){e.preventDefault(); menu.slideToggle();}); $(window).resize(function(){var w = $(window).width(); if(w > 767 && menu.is(':hidden')){menu.removeAttr('style'); }}); });</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<style>
+    
+* {
+    box-sizing: border-box;
+}
+    
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #ededed;
+} 
+ 
+.header-block-text {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+}
+    
+.header-block-contacts {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+}
+    
+.header-block-contacts-inner-form {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    text-transform: none;
+    width: 100%;
+    max-width: 330px;
+    height: 100%;
+    float: right;
+    color: #181818;
+    line-height: 25px;
+}
+    
+.header-block-contacts-inner-form .tel a {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    display: block;
+    margin: 8px 0;
+    color: #181818;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    cursor: unset;
+}
+    
+.header-block-contacts-inner-form h3 {
+    font-size: 14px;
+    margin: 0px 0;
+}
+    
+.email-top {
+    font-size: 20px;
+    text-transform: none;
+}
+    
+.callback {
+    display: block;
+    font-size: 17px;
+    margin: 0px auto 0 auto;
+    width: 100%;
+    max-width: 280px;
+    height: 40px;
+    background: #ffe200;
+    border-radius: 20px;
+    padding: 9px 0 0;
+    text-align: center;
+    color: #000000!important;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: none;
+    text-decoration: none!important;
+    text-shadow: none;
+    transition: all 0.3s;
+    margin-top: 0px;
+    animation: color 1s infinite;
+}
+    
+.header-block-text {
+    background: url(./img/bg/text-brackets.png) no-repeat;
+    width: 519px;
+    display: none;
+}
+    
+.header-block-text a {
+    float: left;
+    padding: 16px 1px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    text-transform: none;
+    color: #181818!important;
+}
+    
+.header-block-links {
+    display: flex;
+    font-size: 25px;
+    color: #181818!important; 
+}
+    
+.tomain a {
+    font-size: 25px;
+    color: #181818!important;    
+}
+
+#first-section-service {
+     background: #3b4356;
+}
+    
+.wrapper-first-service {
+     width: 1400px;
+     max-width: 100%;
+     margin: 0 auto;
+     padding: 0 10px;
+}
+    
+.first-section-service-title 
+.first-title {
+     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+     font-weight: 600;
+     font-size: 25px;
+     color: #ffffff;
+     padding: 20px 0 20px;
+     text-align: center;
+     margin-bottom: 0;
+}
+.first-section-service-title 
+.first-title:after {
+     content: "";
+     display: block;
+     width: 190px;
+     height: 2px;
+     margin: 0 auto;
+     margin-top: 0px;
+     margin-bottom: 0px;
+     background-color: #ffffff;
+}
+    
+.first-section-service-block {
+     display: flex;
+     -webkit-box-pack: justify;
+     justify-content: space-between;
+     padding-bottom: 20px;
+}
+    
+.first-section-service-item-one {
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     flex-direction: row;
+     transition: all 0.3s;
+     padding: 10px 10px;
+     width: 660px;
+     max-height: 1000px;
+     height: 100%;
+    background: #2d3444;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -o-border-radius: 50%;
+     border-radius: 0%;
+     color: #ffffff;
+     text-transform: uppercase;
+     line-height: 25px;
+     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+     font-weight: 500;
+     font-size: 14px;
+     text-align: left;
+     box-shadow: 10px 10px #888888;
+}
+    
+.first-section-service-text {
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     flex-direction: column;
+     margin-right: auto;
+     width: 640px;
+}
+    
+.first-section-service-text 
+.first-text-title {
+     font-size: 25px;
+     color: #ffffff;
+     text-transform: none;
+     margin-bottom: 0;
+     font-weight: 600;
+}
+    
+.first-section-service-text
+.first-text-title span {
+     font-size: 27px;
+     color: #081272;
+}
+    
+.first-section-service-text p {
+     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+     font-size: 20px;
+     font-weight: 400;
+     letter-spacing: 0.5px;
+     line-height: 35px;
+     text-transform: none;
+     color: #ffffff;
+     margin-bottom: 0;
+}
+    
+.first-section-service-item-two {
+     width: 100%;
+     max-width: 660px;
+     height: 100%;
+     max-height: 1000px;
+}
+    
+.first-section-service-img {
+     width: 100%;
+     max-width: 660px;
+     height: 100%;
+     max-height: 390px;
+}
+    
+.first-section-service-img img {
+     width: 100%;
+     max-width: 660px;
+     height: 100%;
+     max-height: 390px;
+}
+    
+/*****/
+    
+#second-section-service {
+     background: #3b4356;
+}
+    
+.wrapper-second-service {
+     width: 1400px;
+     max-width: 100%;
+     margin: 0 auto;
+     padding: 0 10px;
+}
+    
+.second-section-service-title 
+.second-title {
+     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+     font-weight: 600;
+     font-size: 25px;
+     color: #ffffff;
+     padding: 20px 0 20px;
+     text-align: center;
+     margin-bottom: 0;
+}
+.second-section-service-title 
+.second-title:after {
+     content: "";
+     display: block;
+     width: 190px;
+     height: 2px;
+     margin: 0 auto;
+     margin-top: 0px;
+     margin-bottom: 0px;
+     background-color: #ffffff;
+}
+    
+.second-section-service-block {
+     display: flex;
+     -webkit-box-pack: justify;
+     justify-content: space-between;
+     padding-bottom: 20px;
+}
+    
+.second-section-service-item-one {
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     flex-direction: row;
+     transition: all 0.3s;
+     padding: 10px 10px;
+     width: 660px;
+     max-height: 1000px;
+     height: 100%;
+     -webkit-border-radius:50%;
+     -moz-border-radius: 50%;
+     -o-border-radius: 50%;
+     border-radius: 0%;
+     color: #ffffff;
+     text-transform: uppercase;
+     line-height: 25px;
+     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+     font-weight: 500;
+     font-size: 14px;
+     text-align: left;
+}
+    
+.second-section-service-text {
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     flex-direction: column;
+     margin: 0 auto;
+     width: 640px;
+}
+    
+.second-section-service-text 
+.second-text-title {
+     font-size: 25px;
+     color: #ffffff;
+     text-transform: none;
+     margin-bottom: 0;
+     font-weight: 600;
+}
+    
+.second-section-service-text
+.second-text-title span {
+     font-size: 27px;
+     color: #081272;
+}
+    
+.second-section-service-text p {
+     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+     font-size: 20px;
+     font-weight: 400;
+     letter-spacing: 0.5px;
+     line-height: 35px;
+     text-transform: none;
+     color: #ffffff;
+     margin-bottom: 0;
+}
+    
+.second-section-service-item-two {
+     width: 100%;
+     max-width: 660px;
+     height: 100%;
+     max-height: 1000px;
+     background: #2d3444;
+     box-shadow: -10px 10px #888888;
+}
+    
+.second-section-service-img {
+     width: 100%;
+     max-width: 660px;
+     height: 100%;
+     max-height: 390px;
+}
+    
+.second-section-service-img img {
+     width: 100%;
+     max-width: 660px;
+     height: 100%;
+     max-height: 390px;
+}
+    
+/*****/
+    
+#third-section-service {
+     background:#3b4356;
+}
+    
+.wrapper-third-service {
+     width:1400px;
+     max-width:100%;
+     margin:0 auto;
+     padding:0 10px;
+}
+    
+.third-section-service-title 
+.third-title {
+     font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+     font-weight:600;
+     font-size:25px;
+     color:#ffffff;
+     padding:20px 0 20px;
+     text-align:center;
+     margin-bottom:0;
+}
+.third-section-service-title 
+.third-title:after {
+     content:"";
+     display:block;
+     width:190px;
+     height:2px;
+     margin:0 auto;
+     margin-top:0px;
+     margin-bottom:0px;
+     background-color:#ffffff;
+}
+    
+.third-section-service-block {
+     display:flex;
+     -webkit-box-pack:justify;
+     justify-content:space-between;
+     padding-bottom:20px;
+}
+    
+.third-section-service-item-one {
+     display:flex;
+     -webkit-box-orient:vertical;
+     -webkit-box-direction:normal;
+     flex-direction:row;
+     transition:all 0.3s;
+     padding:10px 10px;
+     width:660px;
+     height:100%;
+     max-height: 1000px;
+     -webkit-border-radius:50%;
+     -moz-border-radius:50%;
+     -o-border-radius:50%;
+     border-radius:0%;
+     color:#ffffff;
+     text-transform:uppercase;
+     line-height:25px;
+     font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+     font-weight:500;
+     font-size:14px;
+     text-align:left;
+     background: #2d3444;
+     box-shadow: 10px 10px #888888;
+}
+    
+.third-section-service-text {
+     display:flex;
+     -webkit-box-orient:vertical;
+     -webkit-box-direction:normal;
+     flex-direction:column;
+     margin-right:auto;
+     width:640px;
+}
+    
+.third-section-service-text 
+.third-text-title {
+     font-size:25px;
+     color:#ffffff;
+     text-transform:none;
+     margin-bottom:0;
+     font-weight: 600;
+}
+    
+.third-section-service-text
+.third-text-title span {
+     font-size:27px;
+     color:#081272;
+}
+    
+.third-section-service-text p {
+     font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+     font-size:20px;
+     font-weight:400;
+     letter-spacing:0.5px;
+     line-height:35px;
+     text-transform:none;
+     color:#ffffff;
+     margin-bottom:0;
+}
+    
+.third-section-service-item-two {
+     width:100%;
+     max-width:660px;
+     height:100%;
+     max-height:1000px;
+}
+    
+.third-section-service-img {
+     width:100%;
+     max-width:660px;
+     height:100%;
+     max-height:390px;
+}
+    
+.third-section-service-img img {
+     width:100%;
+     max-width:660px;
+     height:100%;
+     max-height:390px;
+}
+
+/*****/
+    
+#fourth-section-service {
+     background:#3b4356;
+}
+    
+.wrapper-fourth-service {
+     width:1400px;
+     max-width:100%;
+     margin:0 auto;
+     padding:0 10px;
+}
+    
+.fourth-section-service-title 
+.fourth-title {
+     font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+     font-weight:600;
+     font-size:25px;
+     color:#ffffff;
+     padding:20px 0 20px;
+     text-align:center;
+     margin-bottom:0;
+}
+.fourth-section-service-title 
+.fourth-title:after {
+     content:"";
+     display:block;
+     width:190px;
+     height:2px;
+     margin:0 auto;
+     margin-top:0px;
+     margin-bottom:0px;
+     background-color:#ffffff;
+}
+    
+.fourth-section-service-block {
+     display:flex;
+     -webkit-box-pack:justify;
+     justify-content:space-between;
+     padding-bottom:20px;
+}
+    
+.fourth-section-service-item-one {
+     display:flex;
+     -webkit-box-orient:vertical;
+     -webkit-box-direction:normal;
+     flex-direction:row;
+     transition:all 0.3s;
+     padding:10px 10px;
+     width:660px;
+     height:100%;
+     max-height: 1000px;
+     -webkit-border-radius:50%;
+     -moz-border-radius:50%;
+     -o-border-radius:50%;
+     border-radius:0%;
+     color:#ffffff;
+     text-transform:uppercase;
+     line-height:25px;
+     font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+     font-weight:500;
+     font-size:14px;
+     text-align:left;
+}
+    
+.fourth-section-service-text {
+     display:flex;
+     -webkit-box-orient:vertical;
+     -webkit-box-direction:normal;
+     flex-direction:column;
+     margin: 0 auto;
+     width:640px;
+}
+    
+.fourth-section-service-text 
+.fourth-text-title {
+     font-size:25px;
+     color:#ffffff;
+     text-transform:none;
+     margin-bottom:0;
+     font-weight: 600;
+}
+    
+.fourth-section-service-text
+.fourth-text-title span {
+     font-size:27px;
+     color:#081272;
+}
+    
+.fourth-section-service-text p {
+     font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+     font-size:20px;
+     font-weight:400;
+     letter-spacing:0.5px;
+     line-height:35px;
+     text-transform:none;
+     color:#ffffff;
+     margin-bottom:0;
+}
+    
+.fourth-section-service-item-two {
+     width:100%;
+     max-width:660px;
+     height:100%;
+     max-height:1000px;
+     background: #2d3444;
+     box-shadow: -10px 10px #888888;
+}
+    
+.fourth-section-service-img {
+     width:100%;
+     max-width:660px;
+     height:100%;
+     max-height:390px;
+}
+    
+.fourth-section-service-img img {
+     width:100%;
+     max-width:660px;
+     height:100%;
+     max-height:390px;
+}    
+
+</style>
+</head>
+<body>
+
+<section id="header-top">
+    <div class="wrapper-header-top">
+        <div class="header-block">
+            <div class="header-block-logo">
+                <a href="http://skryus.ru"><img src="img/icons/logo.png" alt="Рюс логотип"></a>
+            </div>
+            <div class="header-block-text">
+                <a>Полный спектр строительных услуг для юридических и физических лиц</a>
+            </div>
+            <div class="header-block-links">
+                <div class="tomain"><a href="http://skryus.ru">[ Возврат на главную ]</a></div>
+            </div>
+            <div class="header-block-contacts">
+                <div class="header-block-contacts-inner-form">
+                    <div class="adr">г. Краснодар, ул. Садовая, 112</div>
+                        <div class="tel">
+                            <a href="tel:8(800)550-66-31">8(800)550-66-31</a>
+                        </div>
+                        <h3>Звонок по России Бесплатный</h3>
+                        <div class="tim">пн-вс: 08:00 - 18:00</div>
+                        <div class="email-top">e-mail: sk@ryus.ooo</div>
+                        <a href="#call" data-js="open" class="callback fancybox" data-target="backCall">Заказать обратный звонок</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="popup" style="display:none;">
+     <div class="wrapper">
+          <div class="formtitleone">Обратный звонок</div>
+               <form action="submit_header_top.php" method="post" class="form-header-top" name="form-header-top-app" id="form-header-bottom-app">
+                    <input type="hidden" name="info" value="Оставьте заявку на расчет стоимости работ">
+                    <input type="text" name="name" class="input-header-top input-form-header-top input-name-header-top" placeholder="Ваше имя..." required="">
+                    <input type="text" name="phone" class="input-header-top input-form-header-top input-phone-header-top text-input text-input-phone" placeholder="Ваш телефон..." required="">
+                    <input type="submit" name="submit-form-header-top" class="btn" disabled="" value="Отправить" data-target="">
+                         <div class="checkbox-form-header-top">
+                              <input type="checkbox" id="checkbox-form-id-header-top" class="access_header_top" value="ЗАЯВКА ОТ КЛИЕНТА!" name="access_header_top[]" onclick="check_header_top();">
+                              <a href="politicaconfidencialnosti.html">Я ознакомлен и согласен с <span>Политикой в отношении обработки персональных данных.</span></a>
+                         </div>
+               </form>
+               <script>function check_header_top() {var submit=document.getElementsByName('submit-form-header-top')[0];if (document.getElementById('checkbox-form-id-header-top').checked)submit.disabled = '';else submit.disabled = 'disabled';}</script>
+     </div>
+</div>
+
+<section id="top-menu">
+    <div class="wrapper-menu">
+        <a id="touch-menu"class="mobile-menu"href="#"><i class="icon-reorder"><img src="img/icons/down-arrow.png"alt="Стрелка вниз"></i>Меню</a>
+        <nav>
+            <ul class="menu">
+                <li><a href="#first-section-service">Проектирование</a></li>
+                <li><a href="#second-section-service">Ремонтные работы</a></li>
+                <li><a href="#third-section-service">Строительные услуги</a></li>
+                <li><a href="#fourth-section-service">Эксплутационное обслуживание</a></li>
+            </ul>
+        </nav>
+    </div>
+</section>
+  
+<section id="first-section-service">
+    <div class="wrapper-first-service">
+        <div class="first-section-service-title">
+             <div class="first-title">Проектирование</div>
+        </div>
+        <div class="first-section-service-block">
+            <div class="first-section-service-item-one">
+                <div class="first-section-service-text">
+                     <div class="first-text-title">Проектирование (все стадии и все разделы)</div><br>
+                     <p>Проектирование объекта строительства подразумевает создание полного комплекса документации проекта, который состоит примерно из 30—150 альбомных листов с чертежами, проектами здания в разных ракурсах и разрезах, проектами инженерных сооружений. В эту документацию входят также бумаги, на которых отображается проектирование фасадов, проектирование фундамента, поэтажных перекрытий, кровли и других элементов конструкции. Стадии проектирования:</p><br>
+                     <p>- Предпроектная подготовка;</p><br>
+                     <p>- Проект;</p><br>
+                     <p>- Рабочий проект (включающий перечень документов);</p><br>
+                     <p>- Согласование проекта.</p>
+                </div>
+            </div>
+            <div class="first-section-service-item-two">
+                 <div class="first-section-service-img">
+                      <img src="img/bg/second-bg.png" alt="Работник">
+                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="second-section-service">
+     <div class="wrapper-second-service">
+          <div class="second-section-service-title">
+               <div class="second-title">Ремонтные работы</div>
+          </div>
+          <div class="second-section-service-block">
+               <div class="second-section-service-item-one">
+                    <div class="second-section-service-img">
+                         <img src="img/bg/second-bg.png" alt="">
+                    </div>
+               </div>
+               <div class="second-section-service-item-two">
+                    <div class="second-section-service-text">
+                         <div class="second-text-title">Ремонтные работы</div><br>
+                              <p>Работы, включающие в себя проведение всех видов ремонтов технологического оборудования (капитальные, средние, текущие), а также выполнение окраски технологического оборудования, наложение теплоизоляции и защитного покрытия на поверхность технологического оборудования, проведение дезактивации или отмывки от пыли и загрязнений поверхности технологического оборудования. Основные виды ремонтных работ:</p><br>
+                              <p>- Отделочные работы помещений;</p><br>
+                              <p>- Шпаклевка стен и потолков;</p><br>
+                              <p>- Штукатурка;</p><br>
+                              <p>- Клейка обоев;</p><br>
+                              <p>- Настил ламината, паркетной доски;</p><br>
+                              <p>- Кафель;</p><br>
+                              <p>- Гипсокартон;</p><br>
+                              <p>- Пластик;</p><br>
+                              <p>- Сантехника;</p><br>
+                              <p>- Электрика и многое другое;</p><br>
+                              <p>- Ремонт под ключ;</p><br>
+                              <p>- Чистота и окуратность в работе.</p>
+                    </div>
+               </div>
+          </div>
+     </div>
+</section>
+  
+<section id="third-section-service">
+     <div class="wrapper-third-service">
+          <div class="third-section-service-title">
+               <div class="third-title">Строительные услуги</div>
+          </div>
+          <div class="third-section-service-block">
+               <div class="third-section-service-item-one">
+                    <div class="third-section-service-text">
+                         <div class="third-text-title">Строительные услуги</div><br>
+                              <p>Все виды работ (услуг), выполняемые на строительной площадке (объекте) при возведении, реконструкции или капитальном ремонте зданий и сооружений, включенные в перечень видов работ по строительству реконструкции и капитальному ремонту, утвержденному уполномоченным государственным органом, а также отделочные работы и работы по благоустройству территории. В зависимости от последовательности выполнения их объединяют в 2 группы:</p><br>
+                              <p>- Подготовительные работы;</p><br>
+                              <p>- Основные или общестроительной работы;</p><br>
+                              <p>К отдельной группе можно отнести вспомогательные работы:</p><br>
+                              <p>- Крепление стенок котлованов;</p><br>
+                              <p>- Устройство подмостей;</p><br>
+                              <p>- Понижение уровня грунтовых вод;</p><br>
+                              <p>- Уплотнение грунтов;</p><br>
+                              <p>- Скрытые работы.</p>
+                    </div>
+               </div>
+               <div class="third-section-service-item-two">
+                    <div class="third-section-service-img">
+                        <img src="img/bg/second-bg.png" alt="">
+                    </div>
+               </div>
+          </div>
+     </div>
+</section>
+  
+<section id="fourth-section-service">
+     <div class="wrapper-fourth-service">
+          <div class="fourth-section-service-title">
+               <div class="fourth-title">Эксплуатационное обслуживание</div>
+          </div>
+          <div class="fourth-section-service-block">
+               <div class="fourth-section-service-item-one">
+                    <div class="fourth-section-service-img">
+                         <img src="img/bg/second-bg.png" alt="">
+                    </div>
+               </div>
+               <div class="fourth-section-service-item-two">
+                    <div class="fourth-section-service-text">
+                         <div class="fourth-text-title">Эксплутационное обслуживание</div><br>
+                              <p>Эксплуатационное обслуживание представляет собой комплекс мероприятий, направленных на обеспечение безотказной работы элементов здания или сооружения на протяжении срока службы, регламентированного установленными нормативами. Весь комплекс услуг по эксплуатации включает:</p><br>
+                              <p>- Техническое обслуживание инженерных сетей (контроль состояния, регулировка, отладка);</p><br>
+                              <p>- Текущий либо плановый ремонт инженерных сетей;</p><br>
+                              <p>- Мелкий ремонт архитектурных элементов здания;</p><br>
+                              <p>- Капитальный ремонт зданий;</p><br>
+                              <p>- Организация мероприятий по очистке, благоустройству, уборке прилегающих территорий;</p>
+                              <p>- Модернизация существующих коммуникаций, получение разрешений и согласований;</p><br>
+                              <p>- Экстренное реагирование в случае возникновения чрезвычайных и аварийных ситуаций;</p><br>
+                              <p>- Ведение эксплуатационного паспорта зданий.</p>
+                    </div>
+               </div>
+          </div>
+     </div>
+    
+</section>
+   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/popup.js" type="text/javascript"></script>
+<script src="js/popupimg.js" type="text/javascript"></script>
+<script src="js/scrolldownmenu.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/responsive.js" type="text/javascript"></script>
+     
+</body>
+</html>
