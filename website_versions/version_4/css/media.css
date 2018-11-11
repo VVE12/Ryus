@@ -1,0 +1,944 @@
+/* меню до 1140px */
+
+@media (max-width: 1140px) {
+
+    /* меню навигации */
+ 
+    .wrapper-menu {
+        width: auto;
+        padding: 0px 0px;
+    } 
+    
+    .menu {
+        display: none;
+    }
+ 
+    .mobile-menu{
+        display: block;
+        margin-top: 0px;
+        text-decoration: none!important;
+        background: #081272;
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+    }
+
+    .mobile-menu:hover {
+        background: #081272;
+    }
+ 
+    nav {
+        margin: 0;
+        background: none;
+        margin-left: -40px;
+    }
+ 
+    .menu li {
+        display: block;
+        margin: 0;
+    }
+ 
+    .menu li a {
+        background:#ffffff;
+        color:#797979;
+        border-top:1px solid #e0e0e0;
+        border-left:3px solid #ffffff;
+    }
+ 
+    .menu li a:hover,
+    .menu li:hover > a {
+        background:#f0f0f0;
+        color:#797979;
+        border-left:3px solid #9CA3DA;
+    }
+
+    /* оставьте заявку на расчет стоимости работ */
+
+    .form_e {
+        width: auto;
+    }
+
+    .form-ftr {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    input[type="text"].inp_e {
+        margin: 10px auto;
+    }
+ 
+}
+
+/* 320 - 1450 */
+
+@media (min-width: 320px) and (max-width: 1450px) {
+
+    /* мы гарантируем */
+
+    .fifth-section-content {
+        flex-direction: column;
+    }
+
+    .fifth-section-block-one {
+       margin: 0 auto; 
+    }
+
+    .fifth-section-block-two-item img {
+        height: 100%;
+        width: 100%;
+        max-width: 700px;
+    }
+
+}
+
+/* 320 - 1057 */
+
+@media (min-width: 320px) and (max-width: 1057px) {
+
+    /* оставьте заявку на расчет стоимости работ */
+
+    .eighth-section-block {
+        padding: 50px 0;
+    }
+
+    .form_e {
+        width: auto;
+    }
+
+}
+
+/* 320 - 1068 */
+
+@media (min-width: 320px) and (max-width: 1068px) {
+
+    /* оставьте заявку на расчет стоимости работ */
+
+    .eighth-section-block {
+        padding: 50px 0;
+        flex-direction: column;
+    }
+
+    .img-e {
+        width: 100%;
+        max-width: 700px;
+        height: 100%;
+    }
+
+    .img-e img {
+        height: 100%;
+        width: 100%;
+        max-width: 700px;
+    }
+
+}
+
+/* от 790 */
+
+@media (min-width: 790px) {
+
+    /* заголовок сверху */
+
+    .header-block-text a {
+        background: url(../img/bg/text-brackets.png) no-repeat;
+        width: 519px;
+    }
+}
+
+/* 320 - 900 */
+
+@media (min-width: 320px) and (max-width: 900px) {
+
+    /* наши партнеры */
+
+    .ninth-section-list-row {
+        flex-direction: column;
+    }
+
+    .ninth-section-list-row-item-one {
+        max-width: 100%;
+    }
+
+    .ninth-section-list-row-item-two {
+        max-width: 100%;
+    }
+
+    .ninth-section-list-row-item-three {
+        max-width: 100%;
+    }
+
+    .ninth-section-list-row-item-four {
+        max-width: 100%;
+    }
+
+    .ninth-section-list-row-item-five {
+        max-width: 100%;
+    }
+
+    .ninth-section-list-row-item-six {
+        max-width: 100%;
+    }
+
+    .ninth-section-list-row-item-seven {
+        max-width: 100%;
+    }
+
+}
+
+/* 320 - 400 */
+
+@media (min-width: 320px) and (max-width: 400px) {
+
+    /* оставьте заявку на расчет стоимости работ */
+
+    .form_e {
+        padding: 50px 0;
+    }
+
+    .form-ftr {
+        margin: 0 auto;
+    }
+
+}
+
+/* 320 - 790 */
+
+@media (min-width: 320px) and (max-width: 790px) {
+
+    /* заголовок сверху */
+
+    #header-top {
+        padding-top: 50px;
+    }
+
+    .header-block {
+        flex-direction: column;
+    }
+
+    .header-block-text a {
+        width: auto;
+    }
+
+    /* заголовок снизу */
+
+    .header-bottom-content {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .header-bottom-block {
+        width: auto;
+        margin: 0px 0px;
+        padding: 10px 10px;
+        text-align: center;
+    }
+
+    .header-bottom-form {
+        margin: 90px auto;
+    }
+
+    /* о компании */
+
+    .first-section-title h1 {
+        line-height: 30px;
+    }
+
+    .first-section-block-one {
+        flex-direction: column;
+    }
+
+    .first-section-block-two {
+        flex-direction: column;
+    }
+
+    .first-section-block-one-item {
+        margin: 10px auto;
+    }
+
+    .first-section-block-two-item {
+        margin: 10px auto;
+    }
+
+    /* преимущества */
+
+    .third-section-title h1 {
+        line-height: 30px;
+    }
+
+    .third-section-list-row-one {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .third-section-list-row-item-one {
+        margin: 0 auto;
+    }
+
+    .third-section-list-row-item-two {
+        margin: 0 auto;
+    }
+
+    .third-section-list-row-item-three {
+        margin: 0 auto;
+    }
+
+    .third-section-list-row-two {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .third-section-list-row-item-four {
+        margin: 0 auto;
+    }
+
+    .third-section-list-row-item-five {
+        margin: 0 auto;
+    }
+
+    .third-section-list-row-item-six {
+        margin: 0 auto;
+    }
+
+    /* этапы работ */
+
+    .fourth-section-title h1 {
+        line-height: 30px;
+    }
+
+    .fourth-section-list-row-one {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .fourth-section-list-row-item-one {
+        margin: 0 auto;
+    }
+
+    .fourth-section-list-row-item-two {
+        margin: 0 auto;
+    }
+
+    .fourth-section-list-row-item-three {
+        margin: 0 auto;
+    }
+
+    .fourth-section-list-row-two {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .fourth-section-list-row-item-four {
+        margin: 0 auto;
+    }
+
+    .fourth-section-list-row-item-five {
+        margin: 0 auto;
+    }
+
+    .fourth-section-list-row-item-six {
+        margin: 0 auto;
+    }
+
+    .fourth-section-one-line {
+        display: none;
+    }
+
+    /* мы гарантируем */
+
+    .fifth-section-title h1 {
+        line-height: 30px;
+    }
+
+    .fifth-section-block-one-item {
+        width: 100%;
+        max-width: 310px;
+        height: auto;
+        margin: 0px auto;
+        margin-left: 0;
+    }
+
+    .fifth-section-block-two-item {
+        width: auto;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .fifth-section-block-one-text-one {
+        width: 100%;
+        max-width: 247px;
+        font-size: 15px;
+    }
+
+    .fifth-section-block-one-text-two {
+        width: 100%;
+        max-width: 247px;
+        font-size: 15px;
+    }
+
+    .fifth-section-block-one-text-three {
+        width: 100%;
+        max-width: 247px;
+        font-size: 15px;
+    }
+
+    /* возможные способы оплаты */
+
+    .sixth-section-title h1 {
+        line-height: 30px;
+    }
+
+    /* оставьте заявку на расчет стоимости работ */
+
+    .eighth-section-title h1 {
+        line-height: 30px;
+    }
+
+}
+
+/* от 790 */
+
+@media (min-width: 790px) {
+
+    /* этапы работ */
+
+    .fourth-section-list-row-one-line-block-img-one {
+        display: none;
+    }
+}
+
+/* 320 - 580 */
+
+@media (min-width: 320px) and (max-width: 580px) {
+
+    /* возможные способы оплаты */
+
+    .sixth-section-block {
+        flex-direction: column;
+    }
+
+    .sixth-section-item {
+        margin: 10px auto;
+    }
+
+}
+
+/* 320 - 650 */
+
+@media (min-width: 320px) and (max-width: 650px) {
+
+    /* виды работ */
+
+    .second-section-title h1 {
+        width: auto;
+        padding: 20px 40px;
+        line-height: 30px;
+    }
+
+    /* этапы работ */
+
+    .fourth-section-title h1 {
+        width: auto;
+        line-height: 30px;
+    }
+
+    /* с кем мы работаем */
+
+    .seventh-section-title h1 {
+        width: auto;
+        line-height: 30px;
+    }
+
+    /* почитайте отзывы наших клиентов */
+
+    .tenth-section-title h1 {
+        width: auto;
+        line-height: 30px;
+    }
+
+}
+
+/* 320 - 800 */
+
+@media (min-width: 320px) and (max-width: 800px) {
+
+    /* почитайте отзывы наших клиентов */
+
+    .tenth-section-list-row {
+        flex-direction: column;
+    }
+
+    .tenth-section-list-row-item-one {
+        margin: 10px auto;
+    }
+
+    .tenth-section-list-row-item-two {
+        margin: 10px auto;
+    }
+
+    .tenth-section-list-row-item-three {
+        margin: 10px auto;
+    }
+
+    /* контакты */
+
+    .eleventh-section-list-row {
+        flex-direction: column;
+    }
+
+    .eleventh-section-list-row-one {
+        width: auto;
+    }
+
+    .eleventh-section-list-row-two {
+        margin: 0 auto;
+    }
+
+}
+
+/* 320 - 627 */
+
+@media (min-width: 320px) and (max-width: 627px) {
+
+    /* контакты */
+
+    .eleventh-section-list-row-two {
+        width: auto;
+        margin-bottom: 50px;
+    }
+
+}
+
+/* 320 - 490 */
+
+@media (min-width: 320px) and (max-width: 490px) {
+
+    /* преимущества */
+
+    .third-section-list-row-item-one {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .third-section-list-row-item-two {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .third-section-list-row-item-three {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .third-section-list-row-item-four {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .third-section-list-row-item-five {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .third-section-list-row-item-six {
+        width: auto;
+        margin: 0 auto;
+    }
+
+}
+
+/* 320 - 860 */
+
+@media (min-width: 320px) and (max-width: 860px) {
+
+    /* о компании */
+
+    .first-section-block-one {
+        flex-direction: column;
+    }
+
+    .first-section-block-two {
+        flex-direction: column;
+    }
+
+    .first-section-block-one-item {
+        margin: 10px auto;
+    }
+
+    .first-section-block-two-item {
+        margin: 10px auto;
+    }
+
+}
+
+/* 320 - 1020 */
+
+@media (min-width: 320px) and (max-width: 1020px) {
+
+    /* заголовок сверху */
+
+    .header-block {
+        flex-direction: column;
+    }
+
+    .header-bottom-content {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .header-bottom-block {
+        width: auto;
+        margin: 0px 0px;
+        padding: 10px 10px;
+        text-align: center;
+    }
+
+    .header-bottom-block h1 {
+        font-size: 30px;
+    }
+
+    .header-bottom-form {
+        margin: 90px auto;
+    }
+
+}
+
+/* 320 - 1080 */
+
+@media (min-width: 320px) and (max-width: 1080px) {
+
+    /* о компании */
+
+    .first-section-block-one {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .first-section-block-two {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .first-section-block-one-item-one {
+        margin: 0 auto;
+    }
+
+    .first-section-block-one-item-two {
+        margin: 0 auto;
+    }
+
+    .first-section-block-two-item-one {
+        margin: 0 auto;
+    }
+
+    .first-section-block-two-img {
+        margin:  0 auto;
+    }
+
+    .first-section-block-two-img img {
+        margin: 0 auto;
+    }
+
+    .first-section-block-two-item-two {
+        margin: 0 auto;
+    }
+    
+}
+
+/* 320 - 860 */
+
+@media (min-width: 320px) and (max-width: 860px) {
+
+    /* о компании */
+
+    .first-section-block-one {
+        flex-direction: column;
+    }
+
+    .first-section-block-one-item-one {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .first-section-block-one-text-one p {
+        font-size: 20px;
+    }
+
+    .first-section-block-one-text-two {
+        margin-right: auto;
+        margin-left: unset;
+    }
+
+    .first-section-block-one-text-two p {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .first-section-block-one-item-two {
+        width: 100%;
+        max-width: 660px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .first-section-block-one-img {
+        width: 100%;
+        max-width: 660px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .first-section-block-one-img img {
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .first-section-block-two-item-one {
+        width: 100%;
+        max-width: 660px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .first-section-block-two-img {
+        width: 100%;
+        max-width: 660px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .first-section-block-two-img img {
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .first-section-block-two-item-two {
+        width: 100%;
+        max-width: 660px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+/* 500 - 790 */
+
+@media (min-width: 500px) and (max-width: 790px) { 
+
+    /* заголовок сверху */
+
+    .header-block-text a {
+        width: 404px;
+    }
+
+}
+
+/* 631 - 790 */
+
+@media (min-width: 631px) and (max-width: 790px) { 
+
+    /* заголовок снизу */
+
+    .header-bottom-block {
+        width: 554px;
+        margin: 0 auto;
+    }
+
+}
+
+/* 500 - 790 */
+
+@media (min-width: 500px) and (max-width: 790px) { 
+    /* мы гарантируем */
+
+    .fifth-section-block-one-item-last {
+        width: 100%;
+        max-width: 600px;
+    }
+
+}
+
+/* 320 - 980 */
+
+@media (min-width: 320px) and (max-width: 980px) {
+
+    /* виды работ */
+
+    .second-section-block {
+        flex-direction: column;
+        padding: 50px 0px;
+    }
+
+    /*  мы гарантируем */
+
+    .fifth-section-block-one {
+        flex-direction: column;
+    }
+
+    .fifth-section-block-one-item {
+        margin: 10px auto;
+    }
+
+    .fifth-section-block-two-item {
+        width: auto;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    /* с кем мы работаем */
+
+    .seventh-section-block-one {
+        flex-direction: column;
+    }
+
+    .seventh-section-item-block-one {
+        margin: 10px auto;
+    }
+
+    .seventh-section-block-two {
+        flex-direction: column;
+    }
+
+    .seventh-section-item-block-two {
+        margin: 10px auto;
+    }
+
+}
+
+/* 320 - 360 */
+
+@media (min-width: 320px) and (max-width: 360px) {
+
+    /* о компании */
+
+    .first-section-block-one-item {
+        width: auto;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .first-section-block-two-item {
+        width: auto;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    /*  мы гарантируем */
+
+    .fifth-section-block-one-item {
+        width: 100%;
+        max-width: 310px;
+        height: auto;
+        margin: 0px auto;
+        margin-left: 0;
+    }
+
+    .fifth-section-block-two-item {
+        width: auto;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .fifth-section-block-one-text-one {
+        width: 100%;
+        max-width: 247px;
+        font-size: 15px;
+    }
+
+    .fifth-section-block-one-text-two {
+        width: 100%;
+        max-width: 247px;
+        font-size: 15px;
+    }
+
+    .fifth-section-block-one-text-three {
+        width: 100%;
+        max-width: 247px;
+        font-size: 15px;
+    }
+
+    /* почитайте отзывы наших клиентов */
+
+    .tenth-section-list-row {
+        padding: 0px;
+    }
+
+    .tenth-section-list-row-item-one img {
+        width: 230px;
+    }
+
+    .tenth-section-list-row-item-two img {
+        width: 230px;
+    }
+
+    .tenth-section-list-row-item-three img {
+        width: 230px;
+    }
+
+}
+
+/* 320 - 430 */
+
+@media (min-width: 320px) and (max-width: 430px) {
+
+    /* заголовок снизу */
+
+    .header-bottom-form {
+        width: auto;
+    }
+
+    /* контакты */
+
+    .eleventh-section-list-row {
+        padding: 0px;
+    }
+
+}
+
+/* 320 - 500 */
+
+@media (min-width: 320px) and (max-width: 500px) {
+
+    /* мы гарантируем */
+
+    .fifth-section-title h1 {
+        font-size: 30px;
+    }
+
+    .fifth-section-block-one-item {
+        width: 100%;
+        max-width: 310px;
+        height: auto;
+        margin: 0px auto;
+        margin-left: 0;
+    }
+
+    .fifth-section-block-two-item {
+        width: auto;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .fifth-section-block-one-text-one {
+        width: 100%;
+        max-width: 247px;
+        font-size: 15px;
+    }
+
+    .fifth-section-block-one-text-two {
+        width: 100%;
+        max-width: 247px;
+        font-size: 15px;
+    }
+
+    .fifth-section-block-one-text-three {
+        width: 100%;
+        max-width: 247px;
+        font-size: 15px;
+    }
+
+    .fifth-section-block-one-item-last {
+        width: 100%;
+        max-width: 600px;
+    }
+
+}

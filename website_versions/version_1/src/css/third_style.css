@@ -1,0 +1,1720 @@
+/* настрройки */
+
+* {
+	box-sizing: border-box;
+}
+
+/* главные */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	line-height: 1.42857143;
+  color: #fff;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  background: #ffffff;
+}
+
+.wrapper-head {
+	width: 1140px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.header-wrap {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.logo {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	width: 255px;
+	height: 100px;
+}
+
+.logo {
+  width: 250px;
+  height: 160px;
+}
+
+.logo a {
+  display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  width: 250px;
+  height: 160px;
+  margin-left: 0px;
+  background: url(../img/logos/ryus-logo-new.png) no-repeat; 
+  transition: all 0.3s;
+}
+
+.head_contents {
+  display: flex;
+	width: 900px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.head_content_first {
+  display: flex;
+  flex-direction: column;
+	width: 200px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.block_one {
+	display: flex;
+	width: 200px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.block_one a {
+	width: 25px;
+	height: 25px;
+	background: url(../img/icons/phone-call-24.png) no-repeat;
+	transition: all 0.3s;
+}
+
+.block_one a:hover {
+	background: url(../img/icons/call-24.png) no-repeat;
+	transition: .15s;
+}
+
+.block_one p {
+	text-decoration: none!important;
+  font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	line-height: 1.42857143;
+	color: #000000;
+	padding-left: 5px;
+	transition: all 0.3s;
+}
+
+.block_one p:hover {
+	text-decoration: none!important;
+	font-family: 'Roboto', Black, sans-serif;
+	font-weight: 900;
+  color: #003380;
+}
+
+.head_content_second {
+  display: flex;
+  flex-direction: column;
+	width: 420px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.block_two {
+	display: flex;
+	width: 140px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.block_two a {
+	width: 25px;
+	height: 25px;
+	background: url(../img/icons/envelope-24.png) no-repeat;
+	transition: all 0.3s;
+}
+
+.block_two a:hover {
+  background: url(../img/icons/mail-24.png) no-repeat;
+  transition: .15s;
+}
+
+.block_two p {
+  text-decoration: none!important;
+  font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	line-height: 1.42857143;
+	color: #000000;
+	padding-left: 5px;
+	transition: all 0.3s;
+}
+
+.block_two p:hover {
+  text-decoration: none!important;
+	font-family: 'Roboto', Black, sans-serif;
+	font-weight: 900;
+  color: #003380;
+}
+
+.block_two img {
+	width: 25px;
+	height: 25px;
+}
+
+.block_three {
+	display: flex;
+	width: 420px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.block_three a {
+	width: 25px;
+	height: 25px;
+	background: url(../img/icons/placeholder-24.png) no-repeat;
+	transition: all 0.3s;
+}
+
+.block_three a:hover {
+  background: url(../img/icons/placeholder_hover-24.png) no-repeat;
+  transition: .15s;
+}
+
+.block_three p {
+  text-decoration: none!important;
+  font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	line-height: 1.42857143;
+	color: #000000;
+	padding-left: 5px;
+	transition: all 0.3s;
+}
+
+.block_three p:hover {
+	text-decoration: none!important;
+	font-family: 'Roboto', Black, sans-serif;
+	font-weight: 900;
+  color: #003380;
+}
+
+.block_four {
+  display: flex;
+	width: 400px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.block_four a {
+  width: 25px;
+  height: 25px;
+  background: url(../img/icons/time-24.png) no-repeat;
+  transition: all 0.3s;
+}
+
+.block_four a:hover {
+  background: url(../img/icons/passage-of-time-24.png) no-repeat;
+  transition: .15s;
+}
+
+.block_four p {
+  text-decoration: none!important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.42857143;
+  color: #000000;
+  padding-left: 5px;
+  transition: all 0.3s;
+}
+
+.block_four p:hover {
+  text-decoration: none!important;
+	font-family: 'Roboto', Black, sans-serif;
+	font-weight: 900;
+  color: #003380;
+}
+
+/* меню навигации */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#top_menu {
+	background: #F7F7F7;
+  z-index: 2;
+}
+
+.wrapper_menu {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+ol, ul {
+  margin-top: 0;
+  margin-bottom: 0px!important;
+}
+
+.mobile-menu {
+  display:none;
+  width:100%;
+  padding:11px;
+  background:#3E4156;
+  color:#ffffff;
+  text-transform:uppercase;
+  font-weight:600;
+}
+
+.mobile-menu:hover {
+  background:#3E4156;
+  color:#ffffff;
+  text-decoration:none;
+}
+
+.menu {
+  display:block;
+  background-color: #413d4b;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  position: relative;
+  z-index:100;
+}
+
+.menu li a {
+  font-weight:600;
+  text-decoration:none;
+  padding:11px;
+  display:block;
+  color:#ffffff;
+ 
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.menu li a:hover,
+.menu li:hover > a {
+  color:#ffffff;
+  background:#9CA3DA;
+}
+
+/* кнопка вверх */
+
+#toTop {
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	overflow:hidden;
+	width:51px;
+	height:51px;
+	border:none;
+	text-indent:100%;
+	background:url(../img/icons/ui.totop.png) no-repeat left top;
+  z-index: 2;
+}
+
+#toTopHover {
+	background:url(../img/icons/ui.totop.png) no-repeat left -51px;
+	width:51px;
+	height:51px;
+	display:block;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+
+#toTop:active, #toTop:focus {
+	outline:none;
+}
+
+/* общестроительные работы */
+
+#first_section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+  text-align: center;
+  background: #e5e5e5 url(../img/pics/wildtextures_white-brick-wall.jpg) fixed;
+  background-size: cover;
+}
+
+.wrapper-first {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.first_section_block {
+	max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.first_section_block:hover {
+	border-top: 4px solid #003380;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.first_section_title h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-family: 'Playfair Display', Black, serif;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.first_section_title h1:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #003380;
+  box-shadow: 0px 0px 10px 5px #ffffff;
+}
+
+.first_section_text p {
+  font-family: 'Roboto', Light, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #222;
+  line-height: 25px;
+  text-shadow: 2px 2px 5px #003380;
+}
+
+.calc h1 {
+  font-family: 'Roboto', Black, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #413d4b;
+  text-transform: uppercase;
+  padding: 4px 0 3px 0;
+}
+
+.calc ul {
+  border-top: 1px solid #CCC;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.calc li {
+  border-bottom: 1px solid #CCC;
+  font-size: 14px;
+  padding: 5px 7px;
+  color: #444;
+  text-align: left;
+}
+
+.calc .inp {
+  float: right;
+  width: 110px;
+}
+
+.calc .inp input {
+  width: 50px;
+  text-align: center;
+  padding: 2px;
+  border-radius: 2px;
+  margin-top: -3px;
+  border: 1px solid #BBB;
+}
+
+.first_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+.first_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+button, input[type="button"], input[type="submit"], .button {
+  display: inline-block!important;
+  vertical-align: middle!important;
+  height: 42px!important;
+  padding: 11px 35px 0!important;
+  font-family: 'Roboto', Black, sans-serif!important;
+  font-size: 20px!important;
+  font-weight: 900!important;
+  text-transform: uppercase!important;
+  text-decoration: none!important;
+  -webkit-transition: all 0.3s!important;
+  transition: all 0.3s!important;
+  border-radius: 1px!important;
+  border-color: #003380!important;
+  background-color: #003380!important;
+  color: #ffffff!important;
+  margin: auto auto!important;
+  text-decoration: none!important;
+}
+
+button, input[type="button"], input[type="submit"], .button:hover {
+    color: #ffffff;
+    border-color: #337ab7;
+    background-color: #337ab7;
+    text-decoration: none!important;
+}
+
+/* бетонные работы */
+
+#second_section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: #e5e5e5 url(../img/pics/wildtextures_white-brick-wall.jpg) fixed;
+  background-size: cover;
+}
+
+.wrapper-second {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.second_section_block {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.second_section_block:hover {
+  border-top: 4px solid #003380;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.second_section_text p {
+  font-family: 'Roboto', Light, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #222;
+  line-height: 25px;
+  text-shadow: 2px 2px 5px #003380;
+}
+
+.calc h1 {
+  font-family: 'Roboto', Black, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #413d4b;
+  text-transform: uppercase;
+  padding: 4px 0 3px 0;
+}
+
+.calc ul {
+  border-top: 1px solid #CCC;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.calc li {
+  border-bottom: 1px solid #CCC;
+  font-size: 14px;
+  padding: 5px 7px;
+  color: #444;
+  text-align: left;
+}
+
+.calc .inp {
+  float: right;
+  width: 110px;
+}
+
+.calc .inp input {
+  width: 50px;
+  text-align: center;
+  padding: 2px;
+  border-radius: 2px;
+  margin-top: -3px;
+  border: 1px solid #BBB;
+}
+
+.second_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+.second_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+button, input[type="button"], input[type="submit"], .button {
+  display: inline-block!important;
+  vertical-align: middle!important;
+  height: 42px!important;
+  padding: 11px 35px 0!important;
+  font-family: 'Roboto', Black, sans-serif!important;
+  font-size: 20px!important;
+  font-weight: 900!important;
+  text-transform: uppercase!important;
+  text-decoration: none!important;
+  -webkit-transition: all 0.3s!important;
+  transition: all 0.3s!important;
+  border-radius: 1px!important;
+  border-color: #003380!important;
+  background-color: #003380!important;
+  color: #ffffff!important;
+  margin: auto auto!important;
+  text-decoration: none!important;
+}
+
+button, input[type="button"], input[type="submit"], .button:hover {
+    color: #ffffff;
+    border-color: #337ab7;
+    background-color: #337ab7;
+    text-decoration: none!important;
+}
+
+/* конструкции из кирпича и блоков */
+
+#third_section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: #e5e5e5 url(../img/pics/wildtextures_white-brick-wall.jpg) fixed;
+  background-size: cover;
+}
+
+.wrapper-third {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.third_section_block {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.third_section_block:hover {
+  border-top: 4px solid #003380;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.third_section_text p {
+  font-family: 'Roboto', Light, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #222;
+  line-height: 25px;
+  text-shadow: 2px 2px 5px #003380;
+}
+
+.calc h1 {
+  font-family: 'Roboto', Black, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #413d4b;
+  text-transform: uppercase;
+  padding: 4px 0 3px 0;
+}
+
+.calc ul {
+  border-top: 1px solid #CCC;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.calc li {
+  border-bottom: 1px solid #CCC;
+  font-size: 14px;
+  padding: 5px 7px;
+  color: #444;
+  text-align: left;
+}
+
+.calc .inp {
+  float: right;
+  width: 110px;
+}
+
+.calc .inp input {
+  width: 50px;
+  text-align: center;
+  padding: 2px;
+  border-radius: 2px;
+  margin-top: -3px;
+  border: 1px solid #BBB;
+}
+
+.third_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+.third_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+button, input[type="button"], input[type="submit"], .button {
+  display: inline-block!important;
+  vertical-align: middle!important;
+  height: 42px!important;
+  padding: 11px 35px 0!important;
+  font-family: 'Roboto', Black, sans-serif!important;
+  font-size: 20px!important;
+  font-weight: 900!important;
+  text-transform: uppercase!important;
+  text-decoration: none!important;
+  -webkit-transition: all 0.3s!important;
+  transition: all 0.3s!important;
+  border-radius: 1px!important;
+  border-color: #003380!important;
+  background-color: #003380!important;
+  color: #ffffff!important;
+  margin: auto auto!important;
+  text-decoration: none!important;
+}
+
+button, input[type="button"], input[type="submit"], .button:hover {
+    color: #ffffff;
+    border-color: #337ab7;
+    background-color: #337ab7;
+    text-decoration: none!important;
+}
+
+/* фасадные работы */
+
+#fourth_section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: #e5e5e5 url(../img/pics/wildtextures_white-brick-wall.jpg) fixed;
+  background-size: cover;
+}
+
+.wrapper-fourth {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.fourth_section_block {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fourth_section_block:hover {
+  border-top: 4px solid #003380;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fourth_section_text p {
+  font-family: 'Roboto', Light, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #222;
+  line-height: 25px;
+  text-shadow: 2px 2px 5px #003380;
+}
+
+.calc h1 {
+  font-family: 'Roboto', Black, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #413d4b;
+  text-transform: uppercase;
+  padding: 4px 0 3px 0;
+}
+
+.calc ul {
+  border-top: 1px solid #CCC;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.calc li {
+  border-bottom: 1px solid #CCC;
+  font-size: 14px;
+  padding: 5px 7px;
+  color: #444;
+  text-align: left;
+}
+
+.calc .inp {
+  float: right;
+  width: 110px;
+}
+
+.calc .inp input {
+  width: 50px;
+  text-align: center;
+  padding: 2px;
+  border-radius: 2px;
+  margin-top: -3px;
+  border: 1px solid #BBB;
+}
+
+.fourth_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+.fourth_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+button, input[type="button"], input[type="submit"], .button {
+  display: inline-block!important;
+  vertical-align: middle!important;
+  height: 42px!important;
+  padding: 11px 35px 0!important;
+  font-family: 'Roboto', Black, sans-serif!important;
+  font-size: 20px!important;
+  font-weight: 900!important;
+  text-transform: uppercase!important;
+  text-decoration: none!important;
+  -webkit-transition: all 0.3s!important;
+  transition: all 0.3s!important;
+  border-radius: 1px!important;
+  border-color: #003380!important;
+  background-color: #003380!important;
+  color: #ffffff!important;
+  margin: auto auto!important;
+  text-decoration: none!important;
+}
+
+button, input[type="button"], input[type="submit"], .button:hover {
+    color: #ffffff;
+    border-color: #337ab7;
+    background-color: #337ab7;
+    text-decoration: none!important;
+}
+
+/* вентиляция и кондиционирование */
+
+#fifth_section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: #e5e5e5 url(../img/pics/wildtextures_white-brick-wall.jpg) fixed;
+  background-size: cover;
+}
+
+.wrapper-fifth {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.fifth_section_block {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fifth_section_block:hover {
+  border-top: 4px solid #003380;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fifth_section_text p {
+  font-family: 'Roboto', Light, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #222;
+  line-height: 25px;
+  text-shadow: 2px 2px 5px #003380;
+}
+
+.calc h1 {
+  font-family: 'Roboto', Black, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #413d4b;
+  text-transform: uppercase;
+  padding: 4px 0 3px 0;
+}
+
+.calc ul {
+  border-top: 1px solid #CCC;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.calc li {
+  border-bottom: 1px solid #CCC;
+  font-size: 14px;
+  padding: 5px 7px;
+  color: #444;
+  text-align: left;
+}
+
+.calc .inp {
+  float: right;
+  width: 110px;
+}
+
+.calc .inp input {
+  width: 50px;
+  text-align: center;
+  padding: 2px;
+  border-radius: 2px;
+  margin-top: -3px;
+  border: 1px solid #BBB;
+}
+
+.fifth_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+.fifth_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+button, input[type="button"], input[type="submit"], .button {
+  display: inline-block!important;
+  vertical-align: middle!important;
+  height: 42px!important;
+  padding: 11px 35px 0!important;
+  font-family: 'Roboto', Black, sans-serif!important;
+  font-size: 20px!important;
+  font-weight: 900!important;
+  text-transform: uppercase!important;
+  text-decoration: none!important;
+  -webkit-transition: all 0.3s!important;
+  transition: all 0.3s!important;
+  border-radius: 1px!important;
+  border-color: #003380!important;
+  background-color: #003380!important;
+  color: #ffffff!important;
+  margin: auto auto!important;
+  text-decoration: none!important;
+}
+
+button, input[type="button"], input[type="submit"], .button:hover {
+    color: #ffffff;
+    border-color: #337ab7;
+    background-color: #337ab7;
+    text-decoration: none!important;
+}
+
+/* металлоконструкции */
+
+#sixth_section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: #e5e5e5 url(../img/pics/wildtextures_white-brick-wall.jpg) fixed;
+  background-size: cover;
+}
+
+.wrapper-sixth {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.sixth_section_block {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sixth_section_block:hover {
+  border-top: 4px solid #003380;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sixth_section_text p {
+  font-family: 'Roboto', Light, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #222;
+  line-height: 25px;
+  text-shadow: 2px 2px 5px #003380;
+}
+
+.calc h1 {
+  font-family: 'Roboto', Black, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #413d4b;
+  text-transform: uppercase;
+  padding: 4px 0 3px 0;
+}
+
+.calc ul {
+  border-top: 1px solid #CCC;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.calc li {
+  border-bottom: 1px solid #CCC;
+  font-size: 14px;
+  padding: 5px 7px;
+  color: #444;
+  text-align: left;
+}
+
+.calc .inp {
+  float: right;
+  width: 110px;
+}
+
+.calc .inp input {
+  width: 50px;
+  text-align: center;
+  padding: 2px;
+  border-radius: 2px;
+  margin-top: -3px;
+  border: 1px solid #BBB;
+}
+
+.sixth_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+.sixth_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+button, input[type="button"], input[type="submit"], .button {
+  display: inline-block!important;
+  vertical-align: middle!important;
+  height: 42px!important;
+  padding: 11px 35px 0!important;
+  font-family: 'Roboto', Black, sans-serif!important;
+  font-size: 20px!important;
+  font-weight: 900!important;
+  text-transform: uppercase!important;
+  text-decoration: none!important;
+  -webkit-transition: all 0.3s!important;
+  transition: all 0.3s!important;
+  border-radius: 1px!important;
+  border-color: #003380!important;
+  background-color: #003380!important;
+  color: #ffffff!important;
+  margin: auto auto!important;
+  text-decoration: none!important;
+}
+
+button, input[type="button"], input[type="submit"], .button:hover {
+    color: #ffffff;
+    border-color: #337ab7;
+    background-color: #337ab7;
+    text-decoration: none!important;
+}
+
+/* работы по благоустройству территорий */
+
+#seventh_section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: #e5e5e5 url(../img/pics/wildtextures_white-brick-wall.jpg) fixed;
+  background-size: cover;
+}
+
+.wrapper-seventh {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.seventh_section_block {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.seventh_section_block:hover {
+  border-top: 4px solid #003380;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.seventh_section_text p {
+  font-family: 'Roboto', Light, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #222;
+  line-height: 25px;
+  text-shadow: 2px 2px 5px #003380;
+}
+
+.calc h1 {
+  font-family: 'Roboto', Black, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #413d4b;
+  text-transform: uppercase;
+  padding: 4px 0 3px 0;
+}
+
+.calc ul {
+  border-top: 1px solid #CCC;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.calc li {
+  border-bottom: 1px solid #CCC;
+  font-size: 14px;
+  padding: 5px 7px;
+  color: #444;
+  text-align: left;
+}
+
+.calc .inp {
+  float: right;
+  width: 110px;
+}
+
+.calc .inp input {
+  width: 50px;
+  text-align: center;
+  padding: 2px;
+  border-radius: 2px;
+  margin-top: -3px;
+  border: 1px solid #BBB;
+}
+
+.seventh_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+.seventh_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+button, input[type="button"], input[type="submit"], .button {
+  display: inline-block!important;
+  vertical-align: middle!important;
+  height: 42px!important;
+  padding: 11px 35px 0!important;
+  font-family: 'Roboto', Black, sans-serif!important;
+  font-size: 20px!important;
+  font-weight: 900!important;
+  text-transform: uppercase!important;
+  text-decoration: none!important;
+  -webkit-transition: all 0.3s!important;
+  transition: all 0.3s!important;
+  border-radius: 1px!important;
+  border-color: #003380!important;
+  background-color: #003380!important;
+  color: #ffffff!important;
+  margin: auto auto!important;
+  text-decoration: none!important;
+}
+
+button, input[type="button"], input[type="submit"], .button:hover {
+    color: #ffffff;
+    border-color: #337ab7;
+    background-color: #337ab7;
+    text-decoration: none!important;
+}
+
+/* отделочные работы */
+
+#eighth_section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: #e5e5e5 url(../img/pics/wildtextures_white-brick-wall.jpg) fixed;
+  background-size: cover;
+}
+
+.wrapper-eighth {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.eighth_section_block {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.eighth_section_block:hover {
+  border-top: 4px solid #003380;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.eighth_section_text p {
+  font-family: 'Roboto', Black, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #413d4b;
+  text-transform: uppercase;
+}
+
+.calc h1 {
+  font-family: 'Roboto', Black, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #413d4b;
+  text-transform: uppercase;
+  padding: 4px 0 3px 0;
+}
+
+.calc ul {
+  border-top: 1px solid #CCC;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.calc li {
+  border-bottom: 1px solid #CCC;
+  font-size: 14px;
+  padding: 5px 7px;
+  color: #444;
+  text-align: left;
+}
+
+.calc .inp {
+  float: right;
+  width: 110px;
+}
+
+.calc .inp input {
+  width: 50px;
+  text-align: center;
+  padding: 2px;
+  border-radius: 2px;
+  margin-top: -3px;
+  border: 1px solid #BBB;
+}
+
+.eighth_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+.eighth_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+button, input[type="button"], input[type="submit"], .button {
+  display: inline-block!important;
+  vertical-align: middle!important;
+  height: 42px!important;
+  padding: 11px 35px 0!important;
+  font-family: 'Roboto', Black, sans-serif!important;
+  font-size: 20px!important;
+  font-weight: 900!important;
+  text-transform: uppercase!important;
+  text-decoration: none!important;
+  -webkit-transition: all 0.3s!important;
+  transition: all 0.3s!important;
+  border-radius: 1px!important;
+  border-color: #003380!important;
+  background-color: #003380!important;
+  color: #ffffff!important;
+  margin: auto auto!important;
+  text-decoration: none!important;
+}
+
+button, input[type="button"], input[type="submit"], .button:hover {
+    color: #ffffff;
+    border-color: #337ab7;
+    background-color: #337ab7;
+    text-decoration: none!important;
+}
+
+/* сантехнические работы */
+
+#ninth_section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: #e5e5e5 url(../img/pics/wildtextures_white-brick-wall.jpg) fixed;
+  background-size: cover;
+}
+
+.wrapper-ninth {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.ninth_section_block {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ninth_section_block:hover {
+  border-top: 4px solid #003380;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ninth_section_text p {
+  font-family: 'Roboto', Light, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #222;
+  line-height: 25px;
+  text-shadow: 2px 2px 5px #003380;
+}
+
+.calc h1 {
+  font-family: 'Roboto', Black, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #413d4b;
+  text-transform: uppercase;
+  padding: 4px 0 3px 0;
+}
+
+.calc ul {
+  border-top: 1px solid #CCC;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.calc li {
+  border-bottom: 1px solid #CCC;
+  font-size: 14px;
+  padding: 5px 7px;
+  color: #444;
+  text-align: left;
+}
+
+.calc .inp {
+  float: right;
+  width: 110px;
+}
+
+.calc .inp input {
+  width: 50px;
+  text-align: center;
+  padding: 2px;
+  border-radius: 2px;
+  margin-top: -3px;
+  border: 1px solid #BBB;
+}
+
+.ninth_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+.ninth_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+button, input[type="button"], input[type="submit"], .button {
+  display: inline-block!important;
+  vertical-align: middle!important;
+  height: 42px!important;
+  padding: 11px 35px 0!important;
+  font-family: 'Roboto', Black, sans-serif!important;
+  font-size: 20px!important;
+  font-weight: 900!important;
+  text-transform: uppercase!important;
+  text-decoration: none!important;
+  -webkit-transition: all 0.3s!important;
+  transition: all 0.3s!important;
+  border-radius: 1px!important;
+  border-color: #003380!important;
+  background-color: #003380!important;
+  color: #ffffff!important;
+  margin: auto auto!important;
+  text-decoration: none!important;
+}
+
+button, input[type="button"], input[type="submit"], .button:hover {
+    color: #ffffff;
+    border-color: #337ab7;
+    background-color: #337ab7;
+    text-decoration: none!important;
+}
+
+/* строительные леса */
+
+#tenth_section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: #e5e5e5 url(../img/pics/wildtextures_white-brick-wall.jpg) fixed;
+  background-size: cover;
+}
+
+.wrapper-tenth {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.tenth_section_block {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tenth_section_block:hover {
+  border-top: 4px solid #003380;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tenth_section_text p {
+  font-family: 'Roboto', Light, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #222;
+  line-height: 25px;
+  text-shadow: 2px 2px 5px #003380;
+}
+
+.calc h1 {
+  font-family: 'Roboto', Black, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #413d4b;
+  text-transform: uppercase;
+  padding: 4px 0 3px 0;
+}
+
+.calc ul {
+  border-top: 1px solid #CCC;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.calc li {
+  border-bottom: 1px solid #CCC;
+  font-size: 14px;
+  padding: 5px 7px;
+  color: #444;
+  text-align: left;
+}
+
+.calc .inp {
+  float: right;
+  width: 110px;
+}
+
+.calc .inp input {
+  width: 50px;
+  text-align: center;
+  padding: 2px;
+  border-radius: 2px;
+  margin-top: -3px;
+  border: 1px solid #BBB;
+}
+
+.tenth_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+.tenth_section_bottom {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  height: 100px;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+button, input[type="button"], input[type="submit"], .button {
+  display: inline-block!important;
+  vertical-align: middle!important;
+  height: 42px!important;
+  padding: 11px 35px 0!important;
+  font-family: 'Roboto', Black, sans-serif!important;
+  font-size: 20px!important;
+  font-weight: 900!important;
+  text-transform: uppercase!important;
+  text-decoration: none!important;
+  -webkit-transition: all 0.3s!important;
+  transition: all 0.3s!important;
+  border-radius: 1px!important;
+  border-color: #003380!important;
+  background-color: #003380!important;
+  color: #ffffff!important;
+  margin: auto auto!important;
+  text-decoration: none!important;
+}
+
+button, input[type="button"], input[type="submit"], .button:hover {
+    color: #ffffff;
+    border-color: #337ab7;
+    background-color: #337ab7;
+    text-decoration: none!important;
+}
+
+/* подвал */
+
+footer {
+	background-color: #413d4b;
+}
+
+.wrapper-footer {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.wrapper-footer .footer_left {
+	font-family: 'Roboto', Black, sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.social_icons {
+	display: flex;
+  flex-direction: row;
+  width: 200px;
+  max-width: 100%;
+  margin-left: auto;
+}
+
+.icon_item_one {
+	display: flex;
+  width: 200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.icon_item_one a {
+	width: 32px;
+  height: 32px;
+  background: url(../img/icons/vk.png) no-repeat;
+  transition: all 0.3s;
+}
+
+.icon_item_one a:hover {
+	background: url(../img/icons/vk_hover.png) no-repeat;
+}
+
+.icon_item_two {
+	display: flex;
+  width: 200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.icon_item_two a {
+	width: 32px;
+  height: 32px;
+  background: url(../img/icons/instagram.png) no-repeat;
+  transition: all 0.3s;
+}
+
+.icon_item_two a:hover {
+	background: url(../img/icons/instagram_hover.png) no-repeat;
+}
+
+.icon_item_three {
+	display: flex;
+  width: 200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.icon_item_three a {
+	width: 32px;
+  height: 32px;
+  background: url(../img/icons/google-plus.png) no-repeat;
+  transition: all 0.3s;
+}
+
+.icon_item_three a:hover {
+	background: url(../img/icons/google-plus_hover.png) no-repeat;
+}
